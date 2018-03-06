@@ -17,7 +17,6 @@ const App = () => {
   return(
   <div>
     <header>
-      <h1>Sound Town</h1>
       <GreetingContainer />
     </header>
 
