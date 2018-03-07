@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const mainPage = () => {
+
+
+const loggedOutMainPage = () => {
   return(
     <div className="mainPageContainer">
 
@@ -10,6 +12,37 @@ const mainPage = () => {
       </div>
 
     </div>
+  );
+};
+
+
+const loggedInMainPage = () => {
+  return(
+    <div className="mainPageContainer">
+
+      <div className="mainPageContent">
+
+      </div>
+
+    </div>
+  );
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+const mainPage = ({ currentUser }) => {
+  return(
+    currentUser ? loggedInMainPage() : loggedOutMainPage()
   );
 };
 

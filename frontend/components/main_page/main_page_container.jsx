@@ -3,11 +3,11 @@ import { logout } from '../../actions/session_actions';
 import mainPage from './main_page';
 
 const msp = ({session}) => {
-
+  debugger
+  return({
+    currentUser: session.currentUser
+  })
 }
 
-const mdp = dispatch => {
 
-}
-
-export default connect(null, null)(mainPage);
+export default connect(msp, null)(mainPage);
