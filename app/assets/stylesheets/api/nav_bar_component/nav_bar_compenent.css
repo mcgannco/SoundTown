@@ -1,0 +1,54 @@
+.nav-Bar-Main {
+  width: 100%;
+  background: #333;
+  height: 46px;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+.nav-Bar-List {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.nav-Bar-Button {
+  color: #ccc;
+  padding: 0px 8px 0px 8px;
+}
+
+.nav-Bar-Button:hover {
+  color: white;
+  padding: 0px 8px 0px 8px;
+}
+
+.search-Bar {
+  background-color: #e5e5e5;
+  width: 600px;
+  border-radius: 5px;
+  color: #666;
+  height: 12px;
+  font-size: 14px;
+  padding: 5px 9px;
+  z-index: 1px;
+}
+
+.logo {
+  height: 46px;
+  width: auto;
+}
+
+.userIcon {
+  height: 30px;
+  width: auto;
+}
+
+.userNav {
+  display: flex;
+}
