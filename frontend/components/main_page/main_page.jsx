@@ -15,7 +15,6 @@ const loggedOutMainPage = () => {
   );
 };
 
-
 const loggedInMainPage = () => {
   return(
     <div className="mainPageContainer">
@@ -27,17 +26,6 @@ const loggedInMainPage = () => {
     </div>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
 
 
 const mainPage = ({ currentUser }) => {
