@@ -9,7 +9,7 @@ const loggedOutNav = () => (
       </li>
       <li className="nav-Bar-Button">Charts</li>
       <li>
-        <input className="search-Bar"type="text" value="Search for artists, bands, tracks, podcasts"></input>
+        <input className="search-Bar"type="text" defaultValue="Search for artists, bands, tracks, podcasts"></input>
       </li>
       <li>
         <Link to="/login" className="nav-Bar-Button">Sign In</Link>
@@ -29,11 +29,11 @@ const loggedInNav = (currentUser, logout) => (
       </li>
       <li className="nav-Bar-Button">Charts</li>
       <li>
-        <input className="search-Bar"type="text" value="Search for artists, bands, tracks, podcasts"></input>
+        <input className="search-Bar"type="text" defaultValue="Search for artists, bands, tracks, podcasts"></input>
       </li>
       <li className="userNav">
         <img className="userIcon" src={window.user_icon} alt="userLogo"/>
-        <h2 className="nav-Bar-Button">{currentUser.username}!</h2>
+        <h2 className="nav-Bar-Button">{currentUser.username}</h2>
       </li>
       <li>
         <button className="nav-Bar-Button" onClick={logout}>Log Out</button>

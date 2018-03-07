@@ -1,0 +1,12 @@
+.MainShell {
+  background-color: #f2f2f2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  justify-content: center;
+}
+
+header {
+  width: 100%
+}

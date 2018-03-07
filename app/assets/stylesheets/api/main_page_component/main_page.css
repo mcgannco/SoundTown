@@ -1,0 +1,15 @@
+.mainPageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.mainPageContent {
+  width: 80%;
+  height: 840px;
+  background: white;
+  text-align: center;
+  color: black;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}

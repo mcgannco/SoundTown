@@ -2,7 +2,7 @@
   width: 100%;
   background: #333;
   height: 46px;
-  position: fixed;
+  left: 0px;
   top: 0px;
   z-index: 3;
   display: flex;
@@ -26,6 +26,7 @@
 .nav-Bar-Button:hover {
   color: white;
   padding: 0px 8px 0px 8px;
+  cursor: pointer;
 }
 
 .search-Bar {

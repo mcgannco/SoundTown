@@ -18,8 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const preloadedState = { session: { currentUser: window.currentUser } };
     store = configureStore(preloadedState);
     delete window.currentUser;
+    window.getState = store.getState;
+    window.dispatch = store.dispatch;
   } else {
     store = configureStore();
+    window.getState = store.getState;
+    window.dispatch = store.dispatch;
   }
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store} />, root);
