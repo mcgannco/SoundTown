@@ -1,0 +1,30 @@
+.TrendingContainer {
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  display: block;
+}
+
+.TrendingContainer h1 {
+  text-align: center;
+}
+
+.TopList {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.BottomList {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.TrendingContainer li {
+  width: 200px;
+  height: auto;
+  margin: 0px 0px;
+  display: flex;
+  justify-content: center;
+}

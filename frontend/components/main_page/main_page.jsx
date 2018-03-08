@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import TrendingSongs from '../trending_songs/trending_songs'
 
 
 
@@ -13,10 +14,8 @@ const loggedOutMainPage = () => {
       <div className="mainPageContent">
           <img className="mainBackground" src={window.homepage} alt="ST Logo"/>
           <h3>Hear what’s trending for free in the SoundTown community</h3>
-
+          <TrendingSongs />
       </div>
-
-
     </div>
   );
 };
