@@ -20,6 +20,23 @@ const loggedOutMainPage = () => {
             <button className="SearchBarButton">Upload your own</button>
           </div>
           <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
+          <h3>Hear what’s trending for free in the SoundTown community</h3>
           <TrendingSongs />
       </div>
     </div>

@@ -7,17 +7,7 @@ const TrendingSongs = () => {
   return(
     <div className="TrendingContainer">
 
-      <div className="TopRowSongs">
-        <ul className="TopList">
 
-        </ul>
-      </div>
-
-      <div className="BottomRowSongs">
-        <ul className="BottomList">
-          
-        </ul>
-      </div>
 
     </div>
   );
