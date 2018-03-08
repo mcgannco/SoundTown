@@ -9,26 +9,13 @@ const TrendingSongs = () => {
 
       <div className="TopRowSongs">
         <ul className="TopList">
-          <li><img className="logo" src={window.logo} alt="ST Logo"/></li>
-          <li><img className="logo" src={window.logo} alt="ST Logo"/></li>
-          <li><img className="logo" src={window.logo} alt="ST Logo"/></li>
-          <li><img className="logo" src={window.logo} alt="ST Logo"/></li>
-          <li><img className="logo" src={window.logo} alt="ST Logo"/></li>
-          <li><img className="logo" src={window.logo} alt="ST Logo"/></li>
-
 
         </ul>
       </div>
 
       <div className="BottomRowSongs">
         <ul className="BottomList">
-          <li><img className="logo" src={window.logo} alt="ST Logo"/></li>
-          <li><img className="logo" src={window.logo} alt="ST Logo"/></li>
-          <li><img className="logo" src={window.logo} alt="ST Logo"/></li>
-          <li><img className="logo" src={window.logo} alt="ST Logo"/></li>
-          <li><img className="logo" src={window.logo} alt="ST Logo"/></li>
-          <li><img className="logo" src={window.logo} alt="ST Logo"/></li>
-
+          
         </ul>
       </div>
 
