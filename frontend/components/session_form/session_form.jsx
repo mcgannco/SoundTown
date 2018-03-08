@@ -54,7 +54,7 @@ class SessionForm extends React.Component {
      } else if (this.props.errors[0] === "Password is too short (minimum is 6 characters)") {
        passwordInput = "passwordInputErrors";
        usernameInput = "usernameInput";
-    } else if (this.props.errors[0] === "Username can't be blank") {
+    } else if (this.props.errors[0] === "Username can't be blank" || this.props.errors[0] === "Username has already been taken") {
       passwordInput = "passwordInput";
       usernameInput = "usernameInputErrors";
       }else {
