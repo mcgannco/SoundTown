@@ -52,7 +52,7 @@ class SessionForm extends React.Component {
 
             <div className="TitleWrapper">
               <h1 className="SessionGreeting">
-                
+
               </h1>
                 <div onClick={this.props.closeModal} className="close-x">&#10006;</div>
             </div>
@@ -75,7 +75,7 @@ class SessionForm extends React.Component {
 
             <input className="session-submit" type="submit" value={greeting} />
             <h3>Or</h3>
-            <button className="demoLogin">Demo Login</button>
+            <button className="demoLogin">Demo Tour</button>
           </div>
         </form>
       </div>
