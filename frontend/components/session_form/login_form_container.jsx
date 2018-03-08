@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { login } from '../../actions/session_actions';
-import { openModal, closeModal } from '../../actions/modal_actions';
+import { openModal, closeModal, clearSessionErrors } from '../../actions/modal_actions';
 import SessionForm from './session_form';
 
 const mapStateToProps = ({ errors }) => {
@@ -22,7 +22,8 @@ const mapDispatchToProps = dispatch => {
       </button>
     ),
     closeModal: () => dispatch(closeModal()),
-    login: (user) => dispatch(login(user))
+    login: (user) => dispatch(login(user)),
+    clearSessionErrors: () => dispatch(clearSessionErrors())
   };
 };
 

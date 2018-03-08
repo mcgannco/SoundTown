@@ -1,4 +1,18 @@
-.nav-Bar-Main {
+.nav-Bar-MainLoggedOut {
+  width: 100%;
+  background: transparent;
+  height: 46px;
+  left: 0px;
+  top: 0px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  position: fixed;
+}
+
+.nav-Bar-MainLoggedIn {
   width: 100%;
   background: #333;
   height: 46px;
@@ -12,11 +26,19 @@
   position: fixed;
 }
 
-.nav-Bar-List {
+.nav-Bar-ListLoggedOut {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 93%;
+  border-top: 7px solid #f50;
+}
+
+.nav-Bar-ListLoggedIn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 93%;
 }
 
 .nav-Bar-Button {
@@ -41,16 +63,68 @@
   z-index: 1px;
 }
 
-.logo {
+.logoLoggedOut {
+  height: 55px;
+  width: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.logoLoggedIn {
   height: 46px;
   width: auto;
+
 }
 
 .userIcon {
   height: 30px;
   width: auto;
+  margin-right: 10px;
 }
 
 .userNav {
   display: flex;
+}
+
+.WhiteSignIn{
+  background: 0 0;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0px 18px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1.2px;
+}
+
+.WhiteSignIn:hover{
+  border: 1px solid white;
+}
+
+.OrangeSignIn{
+  background: #f50;
+  color: white;
+  border: 1px solid #f50;
+  border-radius: 3px;
+  padding: 0px 18px;
+  height: 30px;
+  margin-right: 40px;
+  font-family: "PT Sans Narrow", sans-serif;
+  letter-spacing: 1.2px;
+}
+
+.LogoContainer{
+  display: flex;
+  align-items: center;
+}
+
+.SoundTown {
+  margin-top: 20px;
+  color: white;
+  font-family: "PT Sans Narrow", sans-serif;
+  letter-spacing: 2.5px;
+  font-size: 20px;
 }

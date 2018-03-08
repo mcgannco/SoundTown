@@ -43,6 +43,25 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    let passwordInput;
+    let usernameInput;
+     if(this.props.errors[1]) {
+       passwordInput = "passwordInputErrors";
+       usernameInput = "usernameInputErrors";
+     } else if (this.props.errors[0] && this.props.formType === "login") {
+       passwordInput = "passwordInputErrors";
+       usernameInput = "passwordInputErrors";
+     } else if (this.props.errors[0] === "Password is too short (minimum is 6 characters)") {
+       passwordInput = "passwordInputErrors";
+       usernameInput = "usernameInput";
+    } else if (this.props.errors[0] === "Username can't be blank") {
+      passwordInput = "passwordInput";
+      usernameInput = "usernameInputErrors";
+      }else {
+       passwordInput = "passwordInput";
+       usernameInput = "usernameInput";
+     }
+
 
     let greeting;
     if(this.props.formType === "signup") {
@@ -69,14 +88,14 @@ class SessionForm extends React.Component {
                   value={this.state.username}
                   placeholder="Username"
                   onChange={this.update('username')}
-                  className="login-inputUsername"
+                  className={usernameInput}
                 />
 
               <input type="password"
                 value={this.state.password}
                 placeholder="Password"
                 onChange={this.update('password')}
-                className="login-inputPassword"
+                className={passwordInput}
               />
 
 

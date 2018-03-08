@@ -5,41 +5,74 @@
   width: 500px;
   height: 500px;
   padding: 16px;
-  border: 2px solid #888;
   margin: 50px;
   display: block;
   text-align: center;
 }
 
-.login-inputUsername {
-  background-color: #e5e5e5;
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid grey;
+.usernameInput {
+  background: 0 0;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 90%;
   color: #666;
   height: 12px;
   font-size: 14px;
-  padding: 11px 0px;
+  padding: 11px;
   align-items: center;
   margin-top: 40px;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
 }
 
-.login-inputPassword {
-  background-color: #e5e5e5;
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid grey;
+.usernameInputErrors {
+  background: 0 0;
+  color: #666;
+  border: 1px solid red;
+  border-radius: 3px;
+  width: 90%;
   color: #666;
   height: 12px;
   font-size: 14px;
-  padding: 11px 0px;
+  padding: 11px;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: center;
+  text-align: left;
+  font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+.passwordInput {
+  background: 0 0;
+  width: 90%;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  color: #666;
+  height: 12px;
+  font-size: 14px;
+  padding: 11px;
   align-items: center;
   margin-top: 50px;
   justify-content: center;
-  text-align: center;
+  text-align: left;
+  font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+.passwordInputErrors {
+  background: 0 0;
+  width: 90%;
+  border-radius: 3px;
+  border: 1px solid red;
+  color: #666;
+  height: 12px;
+  font-size: 14px;
+  padding: 11px;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: left;
   font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
 }
 
@@ -47,10 +80,10 @@
   background-color: #f50;
     color: white;
     padding: 14px 20px;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
     opacity: 0.9;
     border-radius: 3px;
     font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
@@ -62,7 +95,7 @@
     padding: 14px 0px;
     margin-top: 0px;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
     opacity: 0.9;
     border-radius: 3px;
     font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
@@ -104,4 +137,8 @@
   margin-top: 5px;
   font:12px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
 
+}
+
+input:focus {
+  outline: 0;
 }

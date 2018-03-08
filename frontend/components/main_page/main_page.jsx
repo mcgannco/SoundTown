@@ -13,6 +13,12 @@ const loggedOutMainPage = () => {
       </div>
       <div className="mainPageContent">
           <img className="mainBackground" src={window.homepage} alt="ST Logo"/>
+          <div className="SearchUpload">
+            <input className="SearchBar" defaultValue="Search for artists, bands, tracks, podcasts"></input>
+            <i className="fa fa-search" aria-hidden="true"></i>
+            <p className="Or">or</p>
+            <button className="SearchBarButton">Upload your own</button>
+          </div>
           <h3>Hear what’s trending for free in the SoundTown community</h3>
           <TrendingSongs />
       </div>

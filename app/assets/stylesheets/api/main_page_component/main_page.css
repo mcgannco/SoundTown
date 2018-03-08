@@ -5,7 +5,7 @@
 }
 
 .mainPageContent {
-  width: 80%;
+  width: 93%;
   height: 100%;
   background: white;
   text-align: center;
@@ -18,8 +18,9 @@
 
 .mainPageContainer h3 {
   z-index: 2000;
-  font:24px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans","Garuda","Verdana","Tahoma",'sans-serif';
+  font:24px "Lucida Grande","Lucida Sans Unicode","Lucida Sans","Garuda","Verdana","Tahoma",'sans-serif';
   color: #333;
+  margin-top: 40px;
 }
 
 .IntroGreeting {
@@ -29,7 +30,7 @@
   position: relative;
   text-align: center;
   color: white;
-  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Garuda", "Verdana", "Tahoma", "sans-serif";
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 .IntroGreeting h3 {
@@ -38,10 +39,64 @@
   color: white;
   margin-bottom: 15px;
   margin-top: 60px;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .IntroGreeting p {
-  font-size: 15px;
-  font-family: "arial";
-  padding: 0px, 400px;
+  font-size: 16px;
+  font-family: 'Nanum Gothic', sans-serif;
+  padding: 20px, 500px;
+  font-weight: 0;
+  line-height: 2;
+}
+
+.mainBackground {
+  border-top: 4px solid #f50;
+}
+
+.SearchUpload{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.SearchBar {
+  width: 600px;
+  margin-right: 20px;
+  background: #f2f2f2;
+  padding: 0 16px;
+  height: 46px;
+  color: #666;
+  border: 0;
+  border-radius: 3px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+}
+
+.SearchBarButton {
+  background: 0 0;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0px 30px;
+  height: 46px;
+  margin-right: 10px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: lighter;
+}
+
+.SearchBarButton:hover {
+  border: 1px solid grey;
+}
+
+.login-form input:focus {
+  outline: 0;
+}
+
+.Or {
+  margin-right: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: bold;
+  color: #666;
 }
