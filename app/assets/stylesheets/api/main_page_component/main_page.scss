@@ -1,38 +1,35 @@
 .mainPageContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100%;
-
+  flex-direction: column;
 }
 
 .mainPageContent {
-  width: 93%;
-  height: 100%;
+  width: 87%;
   background: white;
   text-align: center;
   color: black;
-  position: fixed;
   align-items: center;
   justify-content: center;
   display: block;
-  overflow: scroll;
-}
-
-.mainPageContainer h3 {
-  z-index: 2000;
-  font:24px "Lucida Grande","Lucida Sans Unicode","Lucida Sans","Garuda","Verdana","Tahoma",'sans-serif';
-  color: #333;
-  margin-top: 40px;
 }
 
 .IntroGreeting {
-  z-index: 200;
-  top: 13%;
-  height: 300px;
+  // top: 13%;
+  height: 500px;
+  width: 87%;
   position: relative;
   text-align: center;
   color: white;
   font-family: "PT Sans Narrow", sans-serif;
+  background-image: image-url('homepage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 4px solid #f50;
+  display: block;
 }
 
 .IntroGreeting h3 {
@@ -40,7 +37,7 @@
   font-weight: 100;
   color: white;
   margin-bottom: 15px;
-  margin-top: 60px;
+  margin-top: 200px;
   font-family: 'Nanum Gothic', sans-serif;
 }
 

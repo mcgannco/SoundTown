@@ -3,13 +3,13 @@
   background: transparent;
   height: 46px;
   left: 0px;
-  top: 0px;
-  z-index: 3;
+  z-index: 20;
   display: flex;
   justify-content: center;
   align-items: center;
   font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
-  position: fixed;
+  position: absolute;
+  align-content: top;
 }
 
 .nav-Bar-MainLoggedIn {
@@ -30,15 +30,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 93%;
-  border-top: 7px solid #f50;
+  width: 100%;
 }
 
 .nav-Bar-ListLoggedIn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 93%;
+  width: 100%;
 }
 
 .nav-Bar-Button {
@@ -67,7 +66,7 @@
   height: 55px;
   width: auto;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .logoLoggedIn {
@@ -93,7 +92,7 @@
   border-radius: 3px;
   padding: 0px 18px;
   height: 30px;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-right: 10px;
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: lighter;
@@ -122,7 +121,7 @@
 }
 
 .SoundTown {
-  margin-top: 20px;
+  margin-top: 40px;
   color: white;
   font-family: "PT Sans Narrow", sans-serif;
   letter-spacing: 2.5px;

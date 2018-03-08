@@ -8,7 +8,6 @@ import {
   HashRouter
 } from 'react-router-dom';
 
-import NavBarContainer from './nav_bar/nav_bar_container';
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import MainPageContainer from './main_page/main_page_container';
@@ -18,10 +17,7 @@ import Modal from './modal/modal';
 const App = () => {
   return(
   <div className= "MainShell">
-    <header>
-      <NavBarContainer />
       <Modal />
-    </header>
     <MainPageContainer />
   </div>
   );
