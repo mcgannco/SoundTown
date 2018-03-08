@@ -20,7 +20,7 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm(user);
+    this.props.processForm(user).then(this.props.closeModal);
   }
 
   renderErrors() {
@@ -36,28 +36,46 @@ class SessionForm extends React.Component {
   }
 
   render() {
+
+    let greeting;
+    if(this.props.formType === "signup") {
+      greeting = "Create Account";
+    } else {
+      greeting = "Sign In";
+    }
+
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
+
           <div className="login-form">
+
+            <div className="TitleWrapper">
+              <h1 className="SessionGreeting">
+                
+              </h1>
+                <div onClick={this.props.closeModal} className="close-x">&#10006;</div>
+            </div>
+
             <div className="Errors">{this.renderErrors()}</div>
-            <label>Username:
-              <input type="text"
-                value={this.state.username}
-                onChange={this.update('username')}
-                className="login-input"
-              />
-          </label>
-            <br/>
-            <label>Password:
+                <input type="text"
+                  value={this.state.username}
+                  placeholder="Username"
+                  onChange={this.update('username')}
+                  className="login-inputUsername"
+                />
+
               <input type="password"
                 value={this.state.password}
+                placeholder="Password"
                 onChange={this.update('password')}
-                className="login-input"
+                className="login-inputPassword"
               />
-            </label>
-            <br/>
-            <input className="session-submit" type="submit" value={this.props.formType} />
+
+
+            <input className="session-submit" type="submit" value={greeting} />
+            <h3>Or</h3>
+            <button className="demoLogin">Demo Login</button>
           </div>
         </form>
       </div>

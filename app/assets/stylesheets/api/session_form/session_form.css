@@ -1,29 +1,105 @@
-.login-form-container{
-  background: rgba(242,242,242,0.9);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 3
-}
 
 .login-form{
   background: white;
-  width: 450px;
-  height: 620px;
-  margin-left: 600px;
-  margin-top: 50px;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 16px;
+  border: 2px solid #888;
+  margin: 50px;
+  display: block;
+  text-align: center;
 }
 
-.login-input {
+.login-inputUsername {
   background-color: #e5e5e5;
-  width: 300px;
+  width: 100%;
   border-radius: 5px;
   color: #666;
   height: 12px;
   font-size: 14px;
-  padding: 5px 50px;
+  padding: 11px 0px;
   align-items: center;
-  z-index: 10;
+  margin-top: 40px;
+  justify-content: center;
+  text-align: center;
+  font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+.login-inputPassword {
+  background-color: #e5e5e5;
+  width: 100%;
+  border-radius: 5px;
+  color: #666;
+  height: 12px;
+  font-size: 14px;
+  padding: 11px 0px;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+  font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+.session-submit {
+  background-color: #f50;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 80px;
+    margin-bottom: 5px
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 3px;
+    font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+.demoLogin {
+  background-color: #3B5998;
+    color: white;
+    padding: 14px 0px;
+    margin-top: 0px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 3px;
+    font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+.Errors{
+  color: red;
+  text-align: center;
+  font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  height: 20px;
+}
+
+.TitleWrapper {
+
+  text-align: right;
+}
+
+.SessionGreeting{
+  color: black;
+  text-align: center;
+  font:36px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida";
+  color: #999;
+  margin-left: 100px;
+}
+
+.close-x {
+  cursor: pointer;
+  font-style: bold;
+  color: #999;
+  font-size: 20px;
+}
+
+.close-x:hover {
+  color: grey;
+}
+
+.login-form h3 {
+  color: #999;
+  margin-top: 5px;
+  font:12px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+
 }

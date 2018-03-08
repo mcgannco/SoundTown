@@ -9,7 +9,7 @@
   background: white;
   text-align: center;
   color: black;
-  position: relative;
+  position: fixed;
   align-items: center;
   justify-content: center;
 }
