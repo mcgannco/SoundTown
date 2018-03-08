@@ -38,7 +38,7 @@ const navBar = ({currentUser, logout, openModal}) => {
         </li>
         <li className="userNav">
           <img className="userIcon" src={window.user_icon} alt="userLogo"/>
-          <h2 className="nav-Bar-Button">{currentUser.username}</h2>
+          <ul className="nav-Bar-Button">{currentUser.username}</ul>
         </li>
         <li>
           <button className="nav-Bar-Button" onClick={logout}>Log Out</button>

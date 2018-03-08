@@ -1,15 +1,47 @@
 .mainPageContainer {
   display: flex;
   justify-content: center;
+  height: 100%
 }
 
 .mainPageContent {
   width: 80%;
-  height: 840px;
+  height: 100%;
   background: white;
   text-align: center;
   color: black;
   position: fixed;
   align-items: center;
   justify-content: center;
+  display: block;
+}
+
+.mainPageContainer h3 {
+  z-index: 2000;
+  font:24px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans","Garuda","Verdana","Tahoma",'sans-serif';
+  color: #333;
+}
+
+.IntroGreeting {
+  z-index: 200;
+  top: 13%;
+  height: 300px;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Garuda", "Verdana", "Tahoma", "sans-serif";
+}
+
+.IntroGreeting h3 {
+  font-size: 36px;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 15px;
+  margin-top: 60px;
+}
+
+.IntroGreeting p {
+  font-size: 15px;
+  font-family: "arial"
+  padding: 0px, 400px;
 }
