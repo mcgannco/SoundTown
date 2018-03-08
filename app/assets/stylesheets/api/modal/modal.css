@@ -6,7 +6,7 @@
   left: 0;
   background: rgba(242,242,242,.9);
   z-index: 1000;
-  
+
 }
 
 .modal-child {
@@ -14,4 +14,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+.close-x {
+  cursor: pointer;
+  font-style: bold;
+  color: #696969;
+  font-size: 30px;
+  text-align: right;
+  margin: 10px 20px;
+  font-family: 'Poiret One', cursive;
+  font-family: 'Quattrocento Sans', sans-serif;
 }

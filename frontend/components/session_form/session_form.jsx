@@ -75,14 +75,6 @@ class SessionForm extends React.Component {
         <form onSubmit={this.handleSubmit} className="login-form-box">
 
           <div className="login-form">
-
-            <div className="TitleWrapper">
-              <h1 className="SessionGreeting">
-
-              </h1>
-                <div onClick={this.props.closeModal} className="close-x">&#10006;</div>
-            </div>
-
             <div className="Errors">{this.renderErrors()}</div>
                 <input type="text"
                   value={this.state.username}
