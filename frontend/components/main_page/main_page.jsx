@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import TrendingSongs from '../trending_songs/trending_songs'
 import NavBarContainer from '.././nav_bar/nav_bar_container';
+import SongContainer from '../song/song_index_container';
+
 
 const mainPage = ({currentUser, login}) => {
 
@@ -34,9 +36,9 @@ const loggedInMainPage = () => {
     <div className="mainPageContainer">
       <div className="IntroGreetingLoggedIn">
         <NavBarContainer />
-        <h3>Hello</h3>
       </div>
       <div className="mainPageContentLoggedIn">
+          <SongContainer />
           <TrendingSongs />
 
       </div>

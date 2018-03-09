@@ -4,11 +4,14 @@ import configureStore from './store/store';
 import Root from './components/root';
 //will delete these imports later....for testing
 import { signup, login, logout } from './actions/session_actions';
+import { fetchSong, fetchSongs } from './actions/song_actions';
 
 //testing start
 window.signup = signup;
 window.login = login;
 window.logout = logout;
+window.fetchSong = fetchSong;
+window.fetchSongs = fetchSongs;
 //testing end
 
 

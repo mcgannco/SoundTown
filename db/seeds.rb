@@ -9,4 +9,4 @@
   demo_user = User.create(username: "DemoUser", password: "123456")
 
   Song.destroy_all
-  demo_song = Song.create({title: "SongTitle", artist_name: "SongArtist", author_id: 1})
+  demo_song = Song.create({title: "SongTitle", artist_name: "SongArtist", author_id: demo_user.id})
