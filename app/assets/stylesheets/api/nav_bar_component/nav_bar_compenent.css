@@ -37,7 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 75%;
+  text-align: center;
 }
 
 .nav-Bar-Button {
@@ -45,10 +46,24 @@
   padding: 0px 8px 0px 8px;
 }
 
+.nav-Bar-Button li {
+  align-items: center;
+}
+
+.nav-Bar-Button-Home {
+  color: #fff;
+  background-color: #111;
+  height: 46px;
+  text-align: center;
+  align-items: center;
+  width: 100px;
+}
+
 .nav-Bar-Button:hover {
   color: white;
   padding: 0px 8px 0px 8px;
   cursor: pointer;
+  text-align: center;
 }
 
 .search-Bar {
@@ -71,8 +86,7 @@
 
 .logoLoggedIn {
   height: 46px;
-  width: auto;
-
+  width: 50px;;
 }
 
 .userIcon {
@@ -83,6 +97,7 @@
 
 .userNav {
   display: flex;
+  align-items: center;
 }
 
 .WhiteSignIn{
@@ -126,4 +141,8 @@
   font-family: "PT Sans Narrow", sans-serif;
   letter-spacing: 2.5px;
   font-size: 20px;
+}
+
+.nav-Bar-ListLoggedIn ul {
+  display: flex;
 }

@@ -23,6 +23,7 @@ const loggedOutMainPage = () => {
             <button className="SearchBarButton">Upload your own</button>
           </div>
           <TrendingSongs />
+
       </div>
     </div>
   );
@@ -31,11 +32,14 @@ const loggedOutMainPage = () => {
 const loggedInMainPage = () => {
   return(
     <div className="mainPageContainer">
-      <NavBarContainer />
-      <div className="mainPageContent">
+      <div className="IntroGreetingLoggedIn">
+        <NavBarContainer />
+        <h3>Hello</h3>
+      </div>
+      <div className="mainPageContentLoggedIn">
+          <TrendingSongs />
 
       </div>
-
     </div>
   );
 };

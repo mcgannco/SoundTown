@@ -1,0 +1,34 @@
+.IntroGreetingLoggedIn {
+  // top: 13%;
+  height: 500px;
+  width: 75%;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "PT Sans Narrow", sans-serif;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 4px solid #f50;
+  display: block;
+}
+
+.IntroGreetingLoggedIn h3 {
+  font-size: 36px;
+  font-weight: 100;
+  color: black;
+  margin-bottom: 15px;
+  margin-top: 200px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.mainPageContentLoggedIn {
+  width: 75%;
+  background: white;
+  text-align: center;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}

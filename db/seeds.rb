@@ -6,4 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
   User.destroy_all
-  demo_user = User.create({username: "DemoUser", password: "123456"})
+  demo_user = User.create(username: "DemoUser", password: "123456")
+
+  Song.destroy_all
+  demo_song = Song.create({title: "SongTitle", artist_name: "SongArtist", author_id: 1})

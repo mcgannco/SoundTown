@@ -31,12 +31,18 @@ const navBar = ({currentUser, logout, openModal}) => {
     <div className="nav-Bar-MainLoggedIn">
       <ul className="nav-Bar-ListLoggedIn">
         <li>
-          <img className="logoLoggedIn" src={window.logoin} alt="ST Logo"/>
+          <ul>
+            <img className="logoLoggedIn" src={window.logoin} alt="ST Logo"/>
+            <button className="nav-Bar-Button-Home">Home</button>
+          </ul>
         </li>
-        <li className="nav-Bar-Button">Charts</li>
+
+
+        <li className="nav-Bar-Button">Collection</li>
         <li>
           <input className="search-Bar"type="text" defaultValue="Search for artists, bands, tracks, podcasts"></input>
         </li>
+        <li className="nav-Bar-Button">Upload</li>
         <li className="userNav">
           <img className="userIcon" src={window.user_icon} alt="userLogo"/>
           <ul className="nav-Bar-Button">{currentUser.username}</ul>
