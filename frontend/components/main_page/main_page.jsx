@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import TrendingSongs from '../trending_songs/trending_songs'
 import NavBarContainer from '.././nav_bar/nav_bar_container';
 
+const mainPage = ({currentUser, login}) => {
 
 const loggedOutMainPage = () => {
   const user = {username: "DemoUser", password: "123456"};
@@ -12,6 +13,7 @@ const loggedOutMainPage = () => {
         <NavBarContainer />
         <h3>Connect on SoundTown</h3>
         <p>Discover, stream, and share a constantly expanding mix of music<br /> from emerging and major artists around the world.</p>
+        <button onClick={() => login({username: "DemoUser", password: "123456"})} className="DemoTour">Demo Tour</button>
       </div>
       <div className="mainPageContent">
           <div className="SearchUpload">
@@ -20,24 +22,6 @@ const loggedOutMainPage = () => {
             <p className="Or">or</p>
             <button className="SearchBarButton">Upload your own</button>
           </div>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
-          <h3>Hear what’s trending for free in the SoundTown community</h3>
           <TrendingSongs />
       </div>
     </div>
@@ -55,9 +39,6 @@ const loggedInMainPage = () => {
     </div>
   );
 };
-
-
-const mainPage = ({ currentUser }) => {
 
   return(
     currentUser ? loggedInMainPage() : loggedOutMainPage()
