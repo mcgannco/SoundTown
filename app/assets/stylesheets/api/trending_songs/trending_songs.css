@@ -5,5 +5,52 @@
 
 .song {
   width: 170px;
+  margin-top: 20px;
+}
+
+.trending {
+  font-size: 24px;
+  font-weight: 100;
+  color: #333;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.SongTitle {
+  color: #333;
+  font-family: "PT Sans Narrow", sans-serif;
+  letter-spacing: 1.5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.Artist {
+  color: #999;
+  font-family: "PT Sans Narrow", sans-serif;
+  letter-spacing: 1.5px;
+  margin: 0px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.Top50 {
   margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.Top50 a {
+  background: #f50;
+  color: white;
+  border: 1px solid #f50;
+  border-radius: 3px;
+  padding: 13px 23px;
+  height: 46px;
+  margin-top: 400px;
+  font-family: "PT Sans Narrow", sans-serif;
+  letter-spacing: 1.5px;
+  
 }
