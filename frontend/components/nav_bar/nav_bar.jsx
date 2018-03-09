@@ -31,7 +31,7 @@ const navBar = ({currentUser, logout, openModal}) => {
     <div className="nav-Bar-MainLoggedIn">
       <ul className="nav-Bar-ListLoggedIn">
         <li>
-          <img className="logoLoggedIn" src={window.logo} alt="ST Logo"/>
+          <img className="logoLoggedIn" src={window.logoin} alt="ST Logo"/>
         </li>
         <li className="nav-Bar-Button">Charts</li>
         <li>
