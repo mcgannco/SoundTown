@@ -1,0 +1,50 @@
+.SongUploadForm {
+  margin-top: 260px;
+  background:black;
+  display: block;
+  width: 50%;
+  align-items: center;
+}
+
+.UploadContainer {
+  height: 500px;
+  width: 87%;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "PT Sans Narrow", sans-serif;
+  background-image: image-url('upload.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 4px solid #f50;
+  display: block;
+  align-items: center;
+}
+
+.SubNavShell {
+position: fixed;
+width: 100%;
+}
+
+.SubNavListLeft {
+  width: 87%;
+  background: #333;
+  height: 46px;
+  left: 0px;
+  top: 0px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  position: fixed;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  background: white;
+}

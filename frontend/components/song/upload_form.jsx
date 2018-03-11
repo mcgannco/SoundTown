@@ -2,6 +2,7 @@ import React from "react";
 import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
+import SubNav from '.././sub_nav/sub_nav';
 
 class UploadForm extends React.Component {
 
@@ -54,11 +55,12 @@ class UploadForm extends React.Component {
 
   render() {
     return (
-      <div className="mainPageContainer">
+      <div className="container">
           <NavBarBrowseContainer />
-        <div className="IntroGreetingLoggedIn">
+          <SubNav />
+        <div className="UploadContainer">
           <div className="SongUploadForm">
-            <h3>Upload A Song!</h3>
+            <h3>Upload to SoundTown</h3>
             <label>Title
               <input type="text" onChange={this.updateTitle}/>
             </label>
