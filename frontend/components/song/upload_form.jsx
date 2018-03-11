@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
 import SubNav from '.././sub_nav/sub_nav';
+import Footer from '.././footer/footer';
 
 class UploadForm extends React.Component {
 
@@ -74,7 +75,9 @@ class UploadForm extends React.Component {
               </div>
             </div>
           </div>
+
         </div>
+          <Footer />
       </div>
 
     );
