@@ -70,6 +70,7 @@
     align-items: center;
     width: 100px;
     justify-content: center;
+    display: flex;
 }
 
 .nav-BarBrowse-ListLoggedOut ul {

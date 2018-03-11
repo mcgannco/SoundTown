@@ -1,0 +1,17 @@
+.SubNavBar {
+  width: 100%;
+  background: white;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  align-content: top;
+}
+
+.SubNavBar-List {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}

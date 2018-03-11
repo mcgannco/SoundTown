@@ -4,27 +4,22 @@ import { Link } from 'react-router-dom';
 
 const SubNav = () => {
   return(
-    <div className="SubNavShell">
 
-      <ul className="SubNavListLeft">
+    <div className="SubNavBar">
+
+      <ul className="SubNavBar-List">
         <li>
-          <h2>SoundTown</h2>
-          <h2>SoundTown</h2>
-          <h2>SoundTown</h2>
-          <h2>SoundTown</h2>
-          <h2>SoundTown</h2>
-          <h2>SoundTown</h2>
-          <h2>SoundTown</h2>
+          <div className="LogoContainer">
+          <h2 className="OrangSignIn">SoundTown</h2>
+          </div>
         </li>
-        <li>
-          <h2>SoundTown</h2>
-        </li>
-        <li>
-          <h2>SoundTown</h2>
-        </li>
+
       </ul>
 
     </div>
+
+
+
   );
 };
 
