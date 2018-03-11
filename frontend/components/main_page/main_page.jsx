@@ -22,7 +22,7 @@ const loggedOutMainPage = () => {
             <input className="SearchBar" defaultValue="Search for artists, bands, tracks, podcasts"></input>
             <i className="fa fa-search" aria-hidden="true"></i>
             <p className="Or">or</p>
-            <button className="SearchBarButton">Upload your own</button>
+            <Link to="/upload"><button className="SearchBarButton">Upload your own</button></Link>
           </div>
           <TrendingSongs />
 

@@ -58,21 +58,22 @@ class UploadForm extends React.Component {
       <div className="mainPageContainer">
         <div className="uploadContentMain">
           <NavBarBrowseContainer />
+          <div className="UploadContainer">
+          <SubNav />
 
-          <div className="SongUploadForm">
-            <div className="Form">
+            <div className="SongUploadForm">
+              <div className="Form">
+                <h3 className="UploadText">Upload to SoundTown</h3>
+                  <input className = "passwordInput" placeholder="Song Title" type="text" onChange={this.updateTitle}/>
+                  <input className = "ArtistInput" placeholder="Artist Name" type="text" onChange={this.updateArtist}/>
+                  <label className="ChooseFile">ChooseFile
+                      <input className = "File" type="file" onChange={this.updateFile}/>
+                  </label>
 
-                <input className = "passwordInput" placeholder="Song Title" type="text" onChange={this.updateTitle}/>
-                <input className = "ArtistInput" placeholder="Artist Name" type="text" onChange={this.updateArtist}/>
-                <label className="ChooseFile">ChooseFile
-                    <input className = "File" type="file" onChange={this.updateFile}/>
-                </label>
-
-                <button className = "session-submit" onClick={this.handleSubmit}>Upload</button>
+                  <button className = "session-submit" onClick={this.handleSubmit}>Upload</button>
+              </div>
             </div>
-
           </div>
-
         </div>
       </div>
 

@@ -33,7 +33,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 87%;
+  width: 75%;
   text-align: center;
   color: black;
   align-items: center;
@@ -45,7 +45,7 @@
 .Form {
   background: white;
 position: relative;
-width: 500px;
+width: 700px;
 height: 500px;
 padding: 16px;
 margin: 50px;
@@ -94,4 +94,51 @@ text-align: center;
   text-align: left;
   font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
   margin-bottom: 40px;
+}
+
+.UploadNavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 87%;
+    text-align: center;
+}
+
+.UploadContainer {
+  display: block;
+  width: 100%;
+}
+
+.SubNavBar-List {
+  display: flex;
+    align-items: bottom;
+    justify-content: left;
+    width: 100%;
+    text-align: center;
+    background: white;
+    height: 56px;
+    margin-top: 35px;
+    color: black;
+}
+
+.UploadButtons {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+  border-bottom: 1px solid transparent;
+  display: block;
+  z-index: 99999999;
+}
+
+.UploadButtons:hover {
+  color: #f50;
+}
+
+.UploadText {
+  color:black;
+  padding: 36px 0 0;
+  font-size: 24px;
+  line-height: 1;
+  font-family: "PT Sans Narrow", sans-serif;
 }

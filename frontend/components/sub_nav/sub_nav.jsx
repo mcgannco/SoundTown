@@ -5,18 +5,32 @@ import { Link } from 'react-router-dom';
 const SubNav = () => {
   return(
 
-    <div className="SubNavBar">
+
 
       <ul className="SubNavBar-List">
+
         <li>
-          <div className="LogoContainer">
-          <h2 className="OrangSignIn">SoundTown</h2>
-          </div>
+        <Link to="/upload" className="UploadButtons">Upload</Link>
+        </li>
+
+        <li>
+        <a href="#" className="UploadButtons">Your Tracks</a>
+        </li>
+
+        <li>
+        <a href="#" className="UploadButtons">Stats</a>
+        </li>
+
+        <li>
+        <a href="#" className="UploadButtons">Pro Plans</a>
+        </li>
+
+        <li>
+        <a href="#" className="UploadButtons">Pulse</a>
         </li>
 
       </ul>
 
-    </div>
 
 
 
