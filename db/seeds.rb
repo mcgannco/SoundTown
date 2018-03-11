@@ -10,3 +10,4 @@
 
   Song.destroy_all
   demo_song = Song.create({title: "SongTitle", artist_name: "SongArtist", author_id: demo_user.id})
+  demo_song2 = Song.create({title: "SongTitle2", artist_name: "SongArtist2", author_id: demo_user.id})

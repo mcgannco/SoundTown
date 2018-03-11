@@ -1,0 +1,88 @@
+
+.nav-BarBrowse-LoggedOut {
+  width: 100%;
+  background: #333;
+  height: 46px;
+  left: 0px;
+  top: 0px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  position: fixed;
+  text-align: center;
+}
+
+.nav-BarBrowse-ListLoggedOut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  text-align: center;
+}
+
+.nav-BarBrowseLogo{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-BarBrowse-SignIn {
+  display: flex;
+  align-items: center;
+}
+
+.WhiteBrowseSignIn {
+  background: 0 0;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0px 18px;
+  height: 30px;
+  margin-right: 10px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1.2px;
+}
+
+.WhiteBrowseSignIn:hover {
+  border: 1px solid white;
+}
+
+.OrangeBrowseSignIn {
+  background: #f50;
+  color: white;
+  border: 1px solid #f50;
+  border-radius: 3px;
+  padding: 0px 18px;
+  height: 30px;
+  margin-right: 40px;
+  font-family: "PT Sans Narrow", sans-serif;
+  letter-spacing: 1.2px;
+}
+
+.BrowseHomeButton {
+  color: #fff;
+    background-color: #111;
+    height: 46px;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    justify-content: center;
+}
+
+.nav-BarBrowse-ListLoggedOut ul {
+  display: flex;
+}
+
+.nav-Bar-Button-Home {
+  align-items: center;
+  text-align: center;
+  background: red;
+}
+
+.BrowseHomeButton a {
+  text-align: center;
+  align-items: center;
+}

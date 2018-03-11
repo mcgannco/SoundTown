@@ -11,9 +11,8 @@ class Api::SongsController < ApplicationController
   end
 
   def create
-    @song = Song.(song_params)
+    @song = Song.new(song_params)
     @song.author_id = current_user.id
-    @song.title = @song.audio_file_name.split(".").first
     if @song.save
       render "api/songs/show"
     else

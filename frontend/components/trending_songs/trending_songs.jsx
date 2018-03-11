@@ -109,7 +109,7 @@ const TrendingSongs = () => {
       </ul>
 
       <div className= "Top50">
-        <a href="#">Explore our top 50</a>
+        <Link to='/charts'><span>Explore Our Charts</span></Link>
       </div>
     </div>
   );

@@ -38,7 +38,9 @@ const navBar = ({currentUser, logout, openModal}) => {
         </li>
 
 
-        <li className="nav-Bar-Button">Collection</li>
+        <li><Link to='/charts'><span className="nav-Bar-Button">Charts</span></Link></li>
+
+
         <li>
           <input className="search-Bar"type="text" defaultValue="Search for artists, bands, tracks, podcasts"></input>
         </li>
