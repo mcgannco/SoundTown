@@ -42,13 +42,13 @@ const navBar = ({currentUser, logout, openModal}) => {
 
 
         <li>
-          <input className="search-Bar"type="text" defaultValue="Search for artists, bands, tracks, podcasts"></input>
+          <input className="search-Bar"type="text" defaultValue="Search"></input>
         </li>
 
         <li><Link to='/upload'><span className="nav-Bar-Button">Upload</span></Link></li>
         <li className="userNav">
           <img className="userIcon" src={window.user_icon} alt="userLogo"/>
-          <ul className="nav-Bar-Button">{currentUser.username}</ul>
+          <Link to={`/users/${currentUser.id}`} className="nav-Bar-Button">{currentUser.username}</Link>
         </li>
         <li>
           <button className="nav-Bar-Button" onClick={logout}>Log Out</button>

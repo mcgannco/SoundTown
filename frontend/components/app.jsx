@@ -12,6 +12,7 @@ import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import ChartsContainer from './song/charts_container';
 import UploadContainer from './song/upload_container';
+import UserShowContainer from './users/profile_container';
 import MainPageContainer from './main_page/main_page_container';
 import { AuthRoute, ProtectedRoute } from '.././util/route_util';
 import Modal from './modal/modal';
@@ -24,6 +25,7 @@ const App = () => {
       <Route exact path='/' component={ MainPageContainer } />
       <Route path='/charts' component={ ChartsContainer } />
       <Route path='/upload' component={ UploadContainer } />
+      <ProtectedRoute path="/users/:userId" component={UserShowContainer} />
     </Switch>
   </div>
   );

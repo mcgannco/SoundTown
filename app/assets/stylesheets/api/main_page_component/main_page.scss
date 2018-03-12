@@ -118,3 +118,38 @@
   z-index: 90000000000000000000000000;
   background-color: red;
 }
+
+.MainPageContentLeft {
+display: flex;
+justify-content: top;
+flex-direction: column;
+width: 100%;
+background: white;
+border-right: 1px solid #f2f2f2;
+height: 100%;
+}
+
+.Welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border-bottom: 1px solid #f2f2f2;
+  width: 90%;
+}
+
+.WelcomeStatement{
+  font-size: 28px;
+  margin: 0 0 5px;
+  line-height: 1;
+  font-family: "PT Sans Narrow", sans-serif;
+  letter-spacing: 1.4px;
+  font-style: bold;
+}
+
+.Welcome p {
+  font-size: 20px;
+  margin: 0 0 5px;
+  line-height: 1;
+  font-family: "PT Sans Narrow", sans-serif;
+  margin-bottom: 20px;
+}

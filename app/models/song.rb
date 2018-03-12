@@ -16,6 +16,7 @@
 
 class Song < ApplicationRecord
   validates :title, :artist_name, :author_id, presence: true
+  validates :audio, attachment_presence: true
 
   belongs_to :author,
   foreign_key: :author_id,

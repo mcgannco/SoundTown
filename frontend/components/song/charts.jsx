@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import Charts_Container from './charts_container';
 import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
 import SongIndexItem from './song_index_item';
+import Footer from '.././footer/footer';
 
 
 class Charts extends React.Component {
@@ -34,7 +35,7 @@ class Charts extends React.Component {
                 </li>
               </ul>
             </div>
-            
+
             <div className="ContentHeader">
               <div className="ContentHeaderList">
                 <ul>
@@ -59,6 +60,7 @@ class Charts extends React.Component {
             <h3>Who to follow</h3>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

@@ -13,7 +13,7 @@ const Footer = () => {
             <input type="range" step="any" min="0" max="1" className="progress"></input>
             <div className="slider-track">
             </div>
-            <div className=="progress"></div>
+            <div className="progress"></div>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import TrendingSongs from '../trending_songs/trending_songs'
 import NavBarContainer from '.././nav_bar/nav_bar_container';
 import ChartsContainer from '../song/charts_container';
+import Footer from '.././footer/footer';
 
 
 const mainPage = ({currentUser, login}) => {
@@ -36,10 +37,33 @@ const loggedInMainPage = () => {
     <div className="mainPageContainer">
       <div className="IntroGreetingLoggedIn">
         <NavBarContainer />
-      </div>
-      <div className="mainPageContentLoggedIn">
-          <TrendingSongs />
-      </div>
+        <div className="mainPageContentLoggedIn">
+          <div className="MainPageContentLeft">
+            <div className="ContentOptions">
+              <ul>
+                <li>
+                  Stream
+                </li>
+                <li>
+                  Charts
+                </li>
+                <li>
+                  Discover
+                </li>
+              </ul>
+            </div>
+            <div className="ContentHeader">
+              <div className="Welcome">
+                <h4 className="WelcomeStatement">Welcome to SoundTown</h4>
+                <br />
+                <p>Follow your favorite artists, labels and friends on SoundTown and see every track they post right here.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+      <Footer />
     </div>
   );
 };
