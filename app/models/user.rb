@@ -20,6 +20,10 @@ class User < ApplicationRecord
   after_initialize :ensure_session_token
 
 #Associations
+  has_many :songs,
+  foreign_key: :author_id,
+  class_name: :Song,
+  primary_key: :id
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)

@@ -20,6 +20,15 @@ class Api::SongsController < ApplicationController
     end
   end
 
+  def destroy
+    @song = Song.find(params[:id])
+    if @song.destroy
+      render 'api/songs/show'
+    else
+      render json: @song.errors.full_messages, status: 422
+    end
+  end
+
   private
   def song_params
     params.require(:song).permit(:title, :artist_name, :audio)

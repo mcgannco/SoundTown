@@ -25,6 +25,7 @@ const App = () => {
       <Route exact path='/' component={ MainPageContainer } />
       <Route path='/charts' component={ ChartsContainer } />
       <Route path='/upload' component={ UploadContainer } />
+      <Route path='/upload' component={ UploadContainer } />
       <ProtectedRoute path="/users/:userId" component={UserShowContainer} />
     </Switch>
   </div>

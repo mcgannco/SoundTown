@@ -38,6 +38,36 @@
   border-radius: 5px;
 }
 
+.UserSongs {
+
+}
+
 .UserSongs ul {
   height: 100%;
+  margin-bottom: 30px;
+}
+
+.UploadedSong {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.UploadedSongInfo {
+  background: white;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.UserComments {
+  background-color: white;
+  width: 30%;
+  align-items: left;
+}
+
+.UserProfileContent {
+  display: flex;
+  height: 600px;
 }

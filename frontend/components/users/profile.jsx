@@ -17,29 +17,50 @@ class Profile extends React.Component {
   }
 
   render() {
-    const user_songs = this.props.songs.map((song) => {
+    const user_songs = this.props.songs.map((song,idx) => {
 
     if (song.author_id === this.props.currentUser.id) {
       return(
           <UploadedSong
             key={song.id}
             song={song}
+            num={idx + 1}
+            deleteSong={this.props.deleteSong}
             />
         );}
     });
     return (
       <div className="mainPageContainer">
+        <NavBarBrowseContainer />
         <div className="UserContainer">
-          <NavBarBrowseContainer />
           <div className="UserBanner" style={ {backgroundImage: `url(${window.banner})`} }>
             <p className="Name">{this.props.currentUser.username}</p>
           </div>
-          <div className="UserSongs">
-            <h1>Your Uploads</h1>
-            <ul>
-              {user_songs}
-            </ul>
+
+          <div className="UserProfileContent">
+            <div className="UserSongs">
+              <h1>Your Uploads</h1>
+              <ul>
+                {user_songs}
+              </ul>
+            </div>
+
+            <div className="UserComments">
+              <h1>Your Comments</h1>
+              <ul>
+                <li>comment</li>
+                <li>comment</li>
+                <li>comment</li>
+                <li>comment</li>
+                <li>comment</li>
+                <li>comment</li>
+              </ul>
+            </div>
           </div>
+
+
+
+
         </div>
         <Footer />
     </div>

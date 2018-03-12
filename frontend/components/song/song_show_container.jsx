@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import { createSong,fetchSong,fetchSongs,deleteSong } from '../../actions/song_actions';
-import Profile from './profile';
+import { createSong,fetchSong,fetchSongs } from '../../actions/song_actions';
+import SongShow from './song_show';
 
 const msp = (state) => {
 
@@ -12,12 +12,11 @@ const msp = (state) => {
 
 const mdp = dispatch => {
   return({
-  fetchSongs: () => dispatch(fetchSongs()),
-  deleteSong: id => dispatch(deleteSong(id)),
+    fetchSong: (id) => dispatch(fetchSong(id)),
   });
 };
 
 export default connect(
   msp,
   mdp
-)(Profile);
+)(SongShow);
