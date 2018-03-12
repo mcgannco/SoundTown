@@ -5,7 +5,7 @@ import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
 import SubNav from '.././sub_nav/sub_nav';
 import Footer from '.././footer/footer';
 
-class UploadForm extends React.Component {
+class Profile extends React.Component {
 
   constructor(props) {
     super(props);
@@ -16,7 +16,9 @@ class UploadForm extends React.Component {
       <div className="mainPageContainer">
         <div className="UserContainer">
           <NavBarBrowseContainer />
-          <h5 className="username">{this.props.currentUser.username}</h5>
+          <div className="UserBanner" style={ {backgroundImage: `url(${window.banner})`} }>
+            <p className="Name">{this.props.currentUser.username}</p>
+          </div>
         </div>
         <Footer />
     </div>
@@ -24,4 +26,4 @@ class UploadForm extends React.Component {
   }
 }
 
-export default withRouter(UploadForm);
+export default withRouter(Profile);
