@@ -1,0 +1,128 @@
+.FooterContainer {
+    height: 48px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #cecece;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.PlayBar {
+  display: flex;
+  align-items: center;
+}
+
+.playButton {
+  width: 20px;
+  height: 25px;
+  background-image: image-url('play.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.songbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Duration {
+  color: #f50;
+  font-size: 11px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 600px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 600px;
+    height: 2px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #f50;
+    margin-top: -4px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+.slider-track {
+  color: black;
+}
