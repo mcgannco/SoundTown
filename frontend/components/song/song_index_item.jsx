@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const SongIndexItem = ({ song }) => (
   <li className="song-index-item">
-      <span>{song.id}</span>
-      <span>{song.title}</span>
-      <span>{song.artist_name}</span>
-      <audio controls>
+      <span className="ChartsSongInfo">{song.id}</span>
+      <span className="ChartsSongInfo">{song.title}</span>
+      <span className="ChartsSongInfo">{song.artist_name}</span>
+      <audio className="ChartsSongInfo" controls>
         <source src={song.audio_url} type="audio/mpeg"/>
       </audio>
   </li>

@@ -19,14 +19,45 @@ class Charts extends React.Component {
     return(
       <div className="mainPageContainer">
           <NavBarBrowseContainer />
-        <div className="IntroGreetingLoggedIn">
-        </div>
-        <div className="mainPageContentLoggedIn">
-          <h2>This is where all the songs go...</h2>
-          <br />
-          <ul>
-            {songs.map(song => <SongIndexItem key={song.id} song={song} />)}
-          </ul>
+        <div className="ChartsContent">
+          <div className="ContentLeft">
+            <div className="ContentOptions">
+              <ul>
+                <li>
+                  Stream
+                </li>
+                <li>
+                  Charts
+                </li>
+                <li>
+                  Discover
+                </li>
+              </ul>
+            </div>
+            
+            <div className="ContentHeader">
+              <div className="ContentHeaderList">
+                <ul>
+                  <li>
+                    #
+                  </li>
+                  <li>
+                    Song Title
+                  </li>
+                  <li>
+                    Artist
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul >
+              {songs.map(song => <SongIndexItem key={song.id} song={song} />)}
+            </ul>
+          </div>
+
+          <div className="ContentRight">
+            <h3>Who to follow</h3>
+          </div>
         </div>
       </div>
     );
