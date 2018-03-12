@@ -9,12 +9,12 @@
   align-items: top;
   justify-content: center;
   display: block;
-  height: 860px;
+  height: 100%;
 }
 
 .UserBanner{
   background: transparent;
-  height: 400px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,11 @@
   color: white;
   padding: 5px 12px;
   margin-right: 1000px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   font:100 28px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
   border-radius: 5px;
+}
+
+.UserSongs ul {
+  height: 100%;
 }

@@ -12,7 +12,7 @@ const msp = (state) => {
 
 const mdp = dispatch => {
   return({
-
+  fetchSongs: () => dispatch(fetchSongs()),
   });
 };
 
