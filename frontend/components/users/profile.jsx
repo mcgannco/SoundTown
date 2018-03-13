@@ -10,10 +10,27 @@ class Profile extends React.Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      imageFile: null
+    };
   }
 
   componentDidMount() {
     this.props.fetchSongs();
+  }
+
+  handleSubmit(e) {
+    const file = e.target.files[0];
+    this.setState({ imageFile: file});
+
+    const { updateBanner} = this.props;
+    const imgData  = new FormData();
+    if (this.state.songFile) {
+      songData.append("user[image]", this.state.imageFile);
+    }
+    updateBanner(songData).then( action => {
+      this.props.history.push(`/charts`);
+    });
   }
 
   render() {
@@ -33,7 +50,7 @@ class Profile extends React.Component {
       <div className="mainPageContainer">
         <NavBarBrowseContainer />
         <div className="UserContainer">
-          <div className="UserBanner" style={ {backgroundImage: `url(${window.banner})`} }>
+          <div className="UserBanner" style={ {backgroundImage: `url(${this.props.currentUser.banner_img_url})`} }>
             <p className="Name">{this.props.currentUser.username}</p>
           </div>
 
