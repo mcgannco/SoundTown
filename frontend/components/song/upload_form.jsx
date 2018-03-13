@@ -47,7 +47,7 @@ class UploadForm extends React.Component {
       songData.append("song[audio]", this.state.songFile);
     }
     createSong(songData).then( action => {
-      this.props.history.push(`/charts`);
+      this.props.history.push(`/songs/${action.song.id}`);
     });
 
   }
