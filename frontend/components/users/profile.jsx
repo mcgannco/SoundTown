@@ -5,6 +5,8 @@ import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
 import SubNav from '.././sub_nav/sub_nav';
 import Footer from '.././footer/footer';
 import UploadedSong from './uploadedsong';
+import CommentShowContainer from '../comment/comment_show_container';
+
 
 class Profile extends React.Component {
 
@@ -71,14 +73,7 @@ class Profile extends React.Component {
                 <h1>Your Comments</h1>
                 </div>
 
-              <ul>
-                <li>comment</li>
-                <li>comment</li>
-                <li>comment</li>
-                <li>comment</li>
-                <li>comment</li>
-                <li>comment</li>
-              </ul>
+              <CommentShowContainer />
             </div>
           </div>
 

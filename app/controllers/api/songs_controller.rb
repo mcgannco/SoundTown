@@ -7,6 +7,7 @@ class Api::SongsController < ApplicationController
 
   def show
     @song = Song.find(params[:id])
+    @comments = @song.comments
     render "api/songs/show"
   end
 

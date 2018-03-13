@@ -3,13 +3,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
 import Footer from '.././footer/footer';
-
-
-
+import CommentForm from '.././comment/comment_form_container';
+import SongComments from '.././comment/song_comments';
 
 class SongShow extends React.Component {
+
   componentDidMount() {
-    this.props.fetchSong(parseInt(this.props.match.params.songId));
+    this.props.fetchComments().then(() => {
+      this.props.fetchSong(parseInt(this.props.match.params.songId));
+    });
   }
 
   componentWillReceiveProps(nextProps) {
@@ -20,6 +22,14 @@ class SongShow extends React.Component {
 
   render() {
 
+    const song_comments = this.props.comments.map((comment, idx) => {
+      return(
+        <SongComments
+          key={comment.id}
+          comment={comment}
+          />
+      );
+    });
     const { song } = this.props;
     if (Object.keys(song).length === 0) {
       return <div>Loading...</div>;
@@ -48,7 +58,8 @@ class SongShow extends React.Component {
           <div className="SongProfileContent">
             <div className="Comments">
               <div className="CommentBar">
-                <input className="AddComment"type="text" defaultValue="Write a comment"></input>
+                <CommentForm />
+                <ul>{song_comments}</ul>
               </div>
             </div>
           </div>

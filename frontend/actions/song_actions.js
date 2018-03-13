@@ -4,10 +4,11 @@ export const RECEIVE_SONGS = "RECEIVE_SONGS";
 export const RECEIVE_SONG_ERRORS = "RECEIVE_SONG_ERRORS";
 export const REMOVE_SONG = "REMOVE_SONG";
 
-export const receiveSong = song => ({
-  type: RECEIVE_SONG,
-  song
-});
+export const receiveSong = song => {
+  return({
+    type: RECEIVE_SONG,
+  song});
+};
 
 export const receiveSongs = songs => ({
   type: RECEIVE_SONGS,
