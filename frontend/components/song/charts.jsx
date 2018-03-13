@@ -16,7 +16,6 @@ class Charts extends React.Component {
   }
 
   render() {
-    debugger
     const { songs } = this.props;
     return(
       <div className="mainPageContainer">

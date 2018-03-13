@@ -1,0 +1,79 @@
+.SongProfileContent {
+  display: flex;
+  height: 900px;
+  justify-content: center;
+}
+
+.ChartsSongInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 230px;
+  justify-content: center;
+}
+
+.SongBanner {
+  background: transparent;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Creds {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 400px;
+  margin-bottom: 200px;
+}
+
+.Creds h3 {
+  background: black;
+  color: white;
+  width: 500px;;
+  color: white;
+  font-weight: 100;
+  font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+  font-size: 24px;
+  padding: 7px;
+}
+
+.Creds p {
+  background: black;
+  color: #ccc;
+  font-weight: 100;
+  font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+  font-size: 16px;
+  padding: 7px;
+  width: 500px;;
+}
+
+.AddComment {
+  width: 90%;
+  height: 27px;
+  font-size: 14px;
+  padding: 0 9px;
+  font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+  color: grey;
+  border: 1px solid #ccc;
+}
+
+.Comments {
+  width: 60%;
+}
+
+.CommentBar {
+  margin-top: 20px;
+  padding: 5px;
+  background: #f2f2f2;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 5px;
+}

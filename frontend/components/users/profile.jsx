@@ -13,6 +13,7 @@ class Profile extends React.Component {
     this.state = {
       imageFile: null
     };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentDidMount() {
@@ -29,7 +30,7 @@ class Profile extends React.Component {
       songData.append("user[image]", this.state.imageFile);
     }
     updateBanner(songData).then( action => {
-      this.props.history.push(`/charts`);
+      this.props.history.push(`/users/${this.props.currentUser.id}`);
     });
   }
 
@@ -52,6 +53,7 @@ class Profile extends React.Component {
         <div className="UserContainer">
           <div className="UserBanner" style={ {backgroundImage: `url(${this.props.currentUser.banner_img_url})`} }>
             <p className="Name">{this.props.currentUser.username}</p>
+            <button onClick={this.handleSubmit} className ="UploadBanner">Update Image</button>
           </div>
 
           <div className="UserProfileContent">

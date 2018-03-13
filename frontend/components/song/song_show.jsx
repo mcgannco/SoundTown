@@ -1,6 +1,11 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
+import Footer from '.././footer/footer';
+
+
+
 
 class SongShow extends React.Component {
   componentDidMount() {
@@ -8,25 +13,48 @@ class SongShow extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    
-    if (this.props.song.songId != nextProps.match.params.songId) {
-      this.props.fetchPost(nextProps.match.params.songId);
+    if (this.props.song.id != nextProps.match.params.songId) {
+      this.props.fetchSong(nextProps.match.params.songId);
     }
   }
 
   render() {
 
     const { song } = this.props;
-    if (!song) {
+    if (Object.keys(song).length === 0) {
       return <div>Loading...</div>;
     }
 
     return (
-      <div>
-        <h3>{song.title}</h3>
-        <p>{song.artist_name}</p>
-        <Link to="/">Back to Index</Link>
-      </div>
+      <div className="mainPageContainer">
+        <NavBarBrowseContainer />
+        <div className="UserContainer">
+          <div className="SongBanner" style={ {backgroundImage: `url(${this.props.currentUser.banner_img_url})`} }>
+
+            <div className="SongInfo">
+              <audio className="ChartsSongInfo" controls>
+
+                  <source src={song.audio_url} type="audio/mpeg"/>
+                </audio>
+            </div>
+
+            <div className="Creds">
+              <p>{song.artist_name}</p>
+              <h3>{song.title}</h3>
+            </div>
+
+          </div>
+
+          <div className="SongProfileContent">
+            <div className="Comments">
+              <div className="CommentBar">
+                <input className="AddComment"type="text" defaultValue="Write a comment"></input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Footer />
+    </div>
     );
   }
 }
