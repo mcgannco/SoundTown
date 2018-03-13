@@ -32,10 +32,8 @@ class User < ApplicationRecord
   class_name: :Song,
   primary_key: :id
 
-  has_many :comments,
-  foreign_key: :user_id,
-  class_name: :Comment,
-  primary_key: :id
+  has_many :comments, dependent: :destroy
+
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
