@@ -39,14 +39,19 @@ class Profile extends React.Component {
 
           <div className="UserProfileContent">
             <div className="UserSongs">
-              <h1>Your Uploads</h1>
-              <ul>
+              <div className="Header">
+                <h1>Your Uploads</h1>
+                </div>
+              <ul className="SongList">
                 {user_songs}
               </ul>
             </div>
 
             <div className="UserComments">
-              <h1>Your Comments</h1>
+              <div className="Header">
+                <h1>Your Comments</h1>
+                </div>
+
               <ul>
                 <li>comment</li>
                 <li>comment</li>

@@ -6,7 +6,7 @@ width: 100%;
 background: white;
 height: 100%;
 margin-bottom: 50px;
-
+border-right: 0.5px solid #f2f2f2;
 }
 
 .ContentRight {
@@ -17,7 +17,6 @@ margin-bottom: 50px;
   background: white;
   height: 900px;
   align-items: baseline;
-  border-left: 1px solid #f2f2f2;
 }
 
 .ChartsContent {

@@ -12,6 +12,7 @@ import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import ChartsContainer from './song/charts_container';
 import UploadContainer from './song/upload_container';
+import SongShowContainer from './song/song_show_container';
 import UserShowContainer from './users/profile_container';
 import MainPageContainer from './main_page/main_page_container';
 import { AuthRoute, ProtectedRoute } from '.././util/route_util';
@@ -26,6 +27,7 @@ const App = () => {
       <Route path='/charts' component={ ChartsContainer } />
       <Route path='/upload' component={ UploadContainer } />
       <Route path='/upload' component={ UploadContainer } />
+      <Route path='/songs/:songId' component={ SongShowContainer } />
       <ProtectedRoute path="/users/:userId" component={UserShowContainer} />
     </Switch>
   </div>

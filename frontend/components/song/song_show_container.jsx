@@ -2,10 +2,10 @@ import { connect } from 'react-redux';
 import { createSong,fetchSong,fetchSongs } from '../../actions/song_actions';
 import SongShow from './song_show';
 
-const msp = (state) => {
-
+const msp = (state, ownProps) => {
+const song = state.entities.songs[ownProps.match.params.songId];
   return({
-    songs: Object.values(state.entities.songs),
+    song,
     currentUser: state.session.currentUser
   });
 };
