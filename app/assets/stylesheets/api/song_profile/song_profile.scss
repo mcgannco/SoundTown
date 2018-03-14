@@ -40,6 +40,8 @@
   font-family: "Interstate","Lucida Grande",Arial,sans-serif;
   font-size: 24px;
   padding: 7px;
+  margin-top: 0px;
+  border-radius: 10px;
 }
 
 .Creds p {
@@ -49,11 +51,12 @@
   font-family: "Interstate","Lucida Grande",Arial,sans-serif;
   font-size: 16px;
   padding: 7px;
-  width: 500px;;
+  width: 500px;
+  border-radius: 10px;
 }
 
 .AddComment {
-  width: 90%;
+  width: 95%;
   height: 27px;
   font-size: 14px;
   padding: 0 9px;
@@ -63,7 +66,7 @@
 }
 
 .Comments {
-  width: 60%;
+  width: 80%;
 }
 
 .CommentBar {
@@ -74,6 +77,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 30px;
   border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.CommentList {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.CommentInput {
+  width: 100%;
+}
+
+.Form {
+  width: 100%;
+}
+
+.SongCommentList {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+
+}
+
+.SongCommentList span {
+  padding: 10px;
+  font-size: 30px;
+  color: grey;
+  font-weight: 100;
+  font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+  font-size: 16px;
+}
+
+.LittleIcon {
+  width: 30px;
+  height: 30px;
+
 }

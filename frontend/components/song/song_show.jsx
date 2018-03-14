@@ -49,8 +49,8 @@ class SongShow extends React.Component {
             </div>
 
             <div className="Creds">
-              <p>{song.artist_name}</p>
-              <h3>{song.title}</h3>
+              <p>Artist: {song.artist_name}</p>
+              <h3>Song Title: {song.title}</h3>
             </div>
 
           </div>
@@ -59,8 +59,8 @@ class SongShow extends React.Component {
             <div className="Comments">
               <div className="CommentBar">
                 <CommentForm />
-                <ul>{song_comments}</ul>
               </div>
+              <ul class="CommentList">{song_comments}</ul>
             </div>
           </div>
         </div>

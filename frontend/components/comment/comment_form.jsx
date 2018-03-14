@@ -27,13 +27,14 @@ class Comment extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.createComment(this.state).then(() => this.props.history.push(`/songs/${this.state.song_id}`));
+    this.setState({body: ""});
   }
 
   render() {
     return (
-      <div>
+      <div className="CommentInput">
        <form onSubmit={this.handleSubmit}>
-         <input onChange={this.updateBody} value={this.state.body} className="AddComment"type="text" defaultValue="Write a comment"></input>
+         <input onChange={this.updateBody} placeholder="Write a comment" value={this.state.body} className="AddComment"type="text" ></input>
        </form>
      </div>
     );

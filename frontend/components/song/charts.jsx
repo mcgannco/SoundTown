@@ -54,6 +54,7 @@ class Charts extends React.Component {
             <ul >
               {songs.map((song,idx) => <SongIndexItem key={song.id} song={song} num={idx + 1}/>)}
             </ul>
+            
           </div>
 
           <div className="ContentRight">
