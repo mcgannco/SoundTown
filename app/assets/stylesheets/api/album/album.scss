@@ -1,4 +1,30 @@
-.AlbumLittle {
-  background: red;
+.albumplay {
+  // background: red;
   width: 50px;
+  height: 50px;
+  background-image: image-url('play_orange.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.albumpause {
+  width: 50px;
+  height: 50px;
+  background-image: image-url('pause_orange.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.AlbumLittleCover {
+  width: 80%;
+  height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
 }

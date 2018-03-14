@@ -10,7 +10,6 @@ class SongComments extends React.Component {
       this.props.fetchUser(this.props.comment.user_id);
     }
     render() {
-    
       return(
         <li className="SongCommentList">
           <div className="PostedBy">

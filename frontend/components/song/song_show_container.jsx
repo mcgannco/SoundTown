@@ -5,8 +5,17 @@ import { fetchUser } from '../../actions/user_actions';
 import SongShow from './song_show';
 
 const msp = (state, ownProps) => {
-const song = state.entities.songs[ownProps.match.params.songId] || {};
-const comments = song.comment_ids ? song.comment_ids.map(id => state.entities.comments[id]) : [];
+  const song = state.entities.songs[ownProps.match.params.songId] || {};
+  const comments = [];
+  if (song.comment_ids) {
+    song.comment_ids.forEach(id => {
+        const comment = state.entities.comments[id];
+        if (comment) {
+          comments.push(comment);
+        }
+    });
+  }
+
   return({
     song,
     currentUser: state.session.currentUser,

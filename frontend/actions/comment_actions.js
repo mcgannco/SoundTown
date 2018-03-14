@@ -9,10 +9,12 @@ export const receiveComment = comment => ({
   comment
 });
 
-export const receiveComments = comments => ({
-  type: RECEIVE_COMMENTS,
-  comments
-});
+export const receiveComments = comments => {
+  return({
+    type: RECEIVE_COMMENTS,
+    comments
+  });
+};
 
 export const receiveErrors = errors => {
   return({

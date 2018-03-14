@@ -44,18 +44,14 @@ class Charts extends React.Component {
                     #
                   </li>
                   <li>
-                    Song Title
-                  </li>
-                  <li>
-                    Artist
+                    Track
                   </li>
                 </ul>
               </div>
             </div>
             <ul >
-              {songs.map((song,idx) => <SongIndexItem key={song.id} song={song} num={idx + 1}/>)}
+              {songs.map((song,idx) => <SongIndexItem key={song.id} image ={song.image_url} song={song} num={idx + 1}/>)}
             </ul>
-            <AlbumLittle />
           </div>
 
           <div className="ContentRight">

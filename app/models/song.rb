@@ -12,6 +12,10 @@
 #  audio_content_type :string
 #  audio_file_size    :integer
 #  audio_updated_at   :datetime
+#  image_file_name    :string
+#  image_content_type :string
+#  image_file_size    :integer
+#  image_updated_at   :datetime
 #
 
 class Song < ApplicationRecord
@@ -28,4 +32,6 @@ class Song < ApplicationRecord
   has_attached_file :audio
   validates_attachment_content_type :audio, content_type: [ 'audio/mpeg', 'audio/x-mpeg', 'audio/mp3', 'audio/x-mp3', 'audio/mpeg3', 'audio/x-mpeg3', 'audio/mpg', 'audio/x-mpg', 'audio/x-mpegaudio' ]
 
+  has_attached_file :image, default_url: "homepage.jpg"
+  validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 end

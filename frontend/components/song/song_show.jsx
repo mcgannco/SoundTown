@@ -15,13 +15,13 @@ class SongShow extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.song.id && this.props.song.id != nextProps.match.params.songId) {
+    if (this.props.song && (this.props.song.id && this.props.song.id != nextProps.match.params.songId)) {
       this.props.fetchSong(nextProps.match.params.songId);
     }
   }
 
   render() {
-    const song_comments = this.props.comments.map((comment, idx) => {
+    var song_comments = this.props.comments.map((comment, idx) => {
       return(
         <SongComments
           key={comment.id}
