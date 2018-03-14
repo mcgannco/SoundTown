@@ -4,6 +4,7 @@ import Charts_Container from './charts_container';
 import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
 import SongIndexItem from './song_index_item';
 import Footer from '.././footer/footer';
+import AlbumLittle from '.././album_little/album_little';
 
 
 class Charts extends React.Component {
@@ -54,7 +55,7 @@ class Charts extends React.Component {
             <ul >
               {songs.map((song,idx) => <SongIndexItem key={song.id} song={song} num={idx + 1}/>)}
             </ul>
-            
+            <AlbumLittle />
           </div>
 
           <div className="ContentRight">

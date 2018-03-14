@@ -16,6 +16,7 @@ class Comment extends React.Component {
 
   componentDidMount() {
     this.props.fetchComments();
+    this.props.fetchUsers();
   }
 
   updateBody(e) {

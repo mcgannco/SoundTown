@@ -1,6 +1,6 @@
 class Api::UsersController < ApplicationController
 
-  def all_users
+  def index
     @users = User.all
     render :index
   end

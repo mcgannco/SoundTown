@@ -10,6 +10,7 @@ const comments = song.comment_ids ? song.comment_ids.map(id => state.entities.co
     song,
     currentUser: state.session.currentUser,
     comments,
+    users: Object.values(state.entities.users)
   });
 };
 

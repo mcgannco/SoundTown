@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { signup } from '../../actions/session_actions';
 import { openModal, closeModal, clearSessionErrors } from '../../actions/modal_actions';
+import { fetchUsers } from '../../actions/user_actions';
 import SessionForm from './session_form';
 
 const mapStateToProps = ({ errors }) => {
@@ -22,7 +23,8 @@ const mapDispatchToProps = dispatch => {
     ),
     closeModal: () => dispatch(closeModal()),
     login: (user) => dispatch(login(user)),
-    clearSessionErrors: () => dispatch(clearSessionErrors())
+    clearSessionErrors: () => dispatch(clearSessionErrors()),
+    fetchUsers: () => dispatch(fetchUsers())
   };
 };
 

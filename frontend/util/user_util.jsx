@@ -1,7 +1,7 @@
 export const updateBanner = image => {
   return $.ajax({
     method: 'PATCH',
-    url: '/api/user',
+    url: '/api/users',
     processData: false,
     contentType: false,
     dataType: 'json',
@@ -13,5 +13,12 @@ export const fetchBanner = userId => {
   return $.ajax({
     method: 'GET',
     url: `api/songs/${songId}`
+  });
+};
+
+export const fetchUsers = () => {
+  return $.ajax({
+    method: 'GET',
+    url: `api/users`
   });
 };
