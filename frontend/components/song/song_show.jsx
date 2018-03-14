@@ -15,8 +15,7 @@ class SongShow extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-
-    if (this.props.song.id != nextProps.match.params.songId) {
+    if (this.props.song.id && this.props.song.id != nextProps.match.params.songId) {
       this.props.fetchSong(nextProps.match.params.songId);
     }
   }
@@ -27,6 +26,8 @@ class SongShow extends React.Component {
         <SongComments
           key={comment.id}
           comment={comment}
+          fetchUser={this.props.fetchUser}
+          user={this.props.users[comment.user_id] || {}}
           />
       );
     });

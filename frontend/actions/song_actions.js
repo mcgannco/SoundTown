@@ -44,7 +44,9 @@ export const fetchSong = songId => dispatch => {
 export const fetchSongs = () => dispatch => {
   return(
     APIUtil.fetchSongs().then(songs => dispatch(receiveSongs(songs)),
-  err => dispatch(receiveErrors(err.responseJSON))));
+  err => {
+    dispatch(receiveErrors(err.responseJSON));
+  }));
 };
 
 export const deleteSong = (songId) => dispatch => {

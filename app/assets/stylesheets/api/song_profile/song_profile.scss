@@ -99,21 +99,43 @@
 .SongCommentList {
   padding: 12px;
   display: flex;
-  align-items: center;
-
+  justify-content: space-between;
+  width: 100%;
 }
 
 .SongCommentList span {
-  padding: 10px;
-  font-size: 30px;
-  color: grey;
+  padding: 0px 10px;
   font-weight: 100;
   font-family: "Interstate","Lucida Grande",Arial,sans-serif;
-  font-size: 16px;
+  align-items: left;
 }
 
 .LittleIcon {
   width: 30px;
   height: 30px;
 
+}
+
+.PostedBy {
+  display: flex;
+}
+
+.PostAuthor {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.Author {
+  color: grey;
+  font-weight: 100;
+  font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.CommentBodyContent {
+  color: black;
+  font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+  font-size: 12px;
 }
