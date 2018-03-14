@@ -1,0 +1,49 @@
+.UploadedSongUser {
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.AlbumContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.YourUploadsCreds {
+  display: flex;
+  flex-direction: column;
+}
+
+.AlbumBigSongCover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+  margin-left: 25px;
+}
+
+  .chartstitlesong {
+    color: grey;
+    font-weight: 100;
+    font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+    font-size: 14px;
+    margin-right: 56px;
+}
+
+.chartsartistsong {
+    color: black;
+    font-weight: 100;
+    font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+    font-size: 12px;
+    margin-right: 56px;
+}

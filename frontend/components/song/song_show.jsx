@@ -5,6 +5,7 @@ import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
 import Footer from '.././footer/footer';
 import CommentForm from '.././comment/comment_form_container';
 import SongComments from '.././comment/song_comments';
+import AlbumLittle from '.././album_little/album_little';
 
 class SongShow extends React.Component {
 
@@ -42,11 +43,12 @@ class SongShow extends React.Component {
         <div className="UserContainer">
           <div className="SongBanner" style={ {backgroundImage: `url(${this.props.currentUser.banner_img_url})`} }>
 
-            <div className="SongInfo">
-              <audio className="ChartsSongInfo" controls>
-
-                  <source src={song.audio_url} type="audio/mpeg"/>
-                </audio>
+            <div className="SongInfoBig">
+              <div className="AlbumBigCover" style={ {backgroundImage: `url(${song.image_url})`} }>
+                <AlbumLittle
+                  song={song.audio_url}
+                  />
+              </div>
             </div>
 
             <div className="Creds">

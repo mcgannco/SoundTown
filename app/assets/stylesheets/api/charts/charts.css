@@ -153,3 +153,47 @@ border-right: 0.5px solid #f2f2f2;
   padding-right: 17px;
   padding-left: 22px;
 }
+
+.ContentOptionsRight {
+  margin-top: 91px;
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
+.ContentOptionsRight ul {
+    display: flex;
+    width: 90%;
+    border-bottom: 1px solid #f2f2f2;
+    justify-content: space-between;
+}
+
+.ContentOptionsRight li {
+  font-weight: 100;
+  color: #999;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+.ListeningHistory {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
+.ListeningHistory ul {
+    display: flex;
+    width: 90%;
+    border-bottom: 1px solid #f2f2f2;
+    justify-content: space-between;
+}
+
+.ListeningHistory li {
+  font-weight: 100;
+  color: #999;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+}

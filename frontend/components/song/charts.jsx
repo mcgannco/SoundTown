@@ -55,7 +55,27 @@ class Charts extends React.Component {
           </div>
 
           <div className="ContentRight">
-            <h3>Who to follow</h3>
+            <div className="ContentOptionsRight">
+              <ul>
+                <li>
+                  <i className="fas fa-users"></i> Who to follow
+                </li>
+                <li>
+                  <i className="fas fa-sync-alt"></i> Refresh
+                </li>
+              </ul>
+            </div>
+
+            <div className="ListeningHistory">
+              <ul>
+                <li>
+                  <i className="far fa-calendar-alt"></i> Listening history
+                </li>
+                <li>
+                  View all
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <Footer />

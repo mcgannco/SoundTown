@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CommentIndexItem = ({ comment }) => (
-  <li class="CommentItems">
+  <li className="CommentItems">
     <span>{comment.body}</span>
   </li>
 );

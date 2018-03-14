@@ -16,7 +16,7 @@ const SongIndexItem = ({ song, num }) => (
       <span className="chartsartist">{song.artist_name}</span>
     </div>
 
-    <div class="UploadedC">
+    <div className="UploadedC">
       <span className="Uploaded">uploaded: {song.created_at}</span>
     </div>
   </li>
