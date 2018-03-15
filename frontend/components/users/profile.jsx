@@ -61,7 +61,9 @@ class Profile extends React.Component {
           <div className="UserProfileContent">
             <div className="UserSongs">
               <div className="Header">
-                <h1>Your Uploads</h1>
+                <h1>Your Uploads <i class="fas fa-upload"></i>
+
+</h1>
                 </div>
               <ul className="SongList">
                 {user_songs}
@@ -70,7 +72,9 @@ class Profile extends React.Component {
 
             <div className="UserComments">
               <div className="Header">
-                <h1>Your Comments</h1>
+                <h1>Your Comments <i class="far fa-comment"></i>
+
+</h1>
                 </div>
 
               <CommentShowContainer />
