@@ -46,7 +46,7 @@ class UploadForm extends React.Component {
 
 
   handleSubmit(e) {
-    
+
     const { createSong} = this.props;
     const songData  = new FormData();
     songData.append("song[title]", this.state.title);
@@ -75,13 +75,16 @@ class UploadForm extends React.Component {
                 <h3 className="UploadText">Upload to SoundTown</h3>
                   <input className = "passwordInput" placeholder="Song Title" type="text" onChange={this.updateTitle}/>
                   <input className = "ArtistInput" placeholder="Artist Name" type="text" onChange={this.updateArtist}/>
-                  <label className="ChooseFile">Choose Audio File
-                      <input className = "File" type="file" onChange={this.updateFile}/>
-                  </label>
 
-                  <label className="ChooseFile">Choose Picture
+                <div className="UploadFiles">
+                    <label className="ChooseFile">Choose Audio File
+                      <input className = "File" type="file" onChange={this.updateFile}/>
+                    </label>
+
+                    <label className="ChooseFile">Choose Picture
                       <input className = "File" type="file" onChange={this.updateImageFile}/>
-                  </label>
+                    </label>
+                  </div>
 
                   <button className = "session-submit" onClick={this.handleSubmit}>Upload</button>
               </div>

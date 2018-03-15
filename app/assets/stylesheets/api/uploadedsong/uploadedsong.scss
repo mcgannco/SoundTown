@@ -16,6 +16,9 @@
 .YourUploadsCreds {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: left;
+  margin-left: 10px;
 }
 
 .AlbumBigSongCover {
@@ -29,7 +32,7 @@
   border-radius: 10px;
   height: 100px;
   width: 100px;
-  margin-left: 25px;
+  margin-left: 50px;
 }
 
   .chartstitlesong {
@@ -38,6 +41,7 @@
     font-family: "Interstate","Lucida Grande",Arial,sans-serif;
     font-size: 14px;
     margin-right: 56px;
+    text-align: left;
 }
 
 .chartsartistsong {
@@ -46,4 +50,44 @@
     font-family: "Interstate","Lucida Grande",Arial,sans-serif;
     font-size: 12px;
     margin-right: 56px;
+    text-align: left;
+}
+
+.UploadedC {
+  display: flex;
+  align-items: right;
+}
+
+.UploadLI {
+  width: 40%;
+  display: flex;
+  align-items: left;
+}
+
+.CommentItems {
+  display: flex;
+  margin-left: 30px;
+  margin-left: 54px;
+  padding-bottom: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.CommentItems span {
+  white-space: nowrap;
+  width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.ViewDelete {
+  display: flex;
+  align-items: right;
+  margin-left: 284px;
+}
+
+.ViewDelete button {
+  margin-left: 5px;
 }

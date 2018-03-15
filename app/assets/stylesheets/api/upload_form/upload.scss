@@ -63,12 +63,14 @@ text-align: center;
   color: white;
   border: 1px solid black;
   border-radius: 3px;
-  padding: 10px 18px;
-  height: 30px;
+  padding: 2px 12px;
   font-family: "PT Sans Narrow", sans-serif;
   letter-spacing: 1.2px;
-  margin-top: 50px;
   cursor: pointer;
+  align-items: center;
+  text-align: center;
+  margin-right: 20px;
+  width: 121px;
 }
 
 .File {
@@ -142,4 +144,8 @@ text-align: center;
   font-size: 24px;
   line-height: 1;
   font-family: "PT Sans Narrow", sans-serif;
+}
+.UploadFiles{
+  display: flex;
+  justify-content: center;
 }
