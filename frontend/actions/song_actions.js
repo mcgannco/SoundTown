@@ -30,18 +30,21 @@ export const removeSong = songId => {
 };
 
 export const createSong = song => dispatch => {
+
   return(
     APIUtil.createSong(song).then(song => dispatch(receiveSong(song)),
   err => dispatch(receiveErrors(err.responseJSON))));
 };
 
 export const fetchSong = songId => dispatch => {
+
   return(
     APIUtil.fetchSong(songId).then(song => dispatch(receiveSong(song)),
   err => dispatch(receiveErrors(err.responseJSON))));
 };
 
 export const fetchSongs = () => dispatch => {
+
   return(
     APIUtil.fetchSongs().then(songs => dispatch(receiveSongs(songs)),
   err => {
@@ -50,6 +53,7 @@ export const fetchSongs = () => dispatch => {
 };
 
 export const deleteSong = (songId) => dispatch => {
+
   return(
     APIUtil.deleteSong(songId).then(song => dispatch(removeSong(songId)),
   err => dispatch(receiveErrors(err.responseJSON))));

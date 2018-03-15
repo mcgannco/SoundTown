@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import TrendingSongs from '../trending_songs/trending_songs'
 import NavBarContainer from '.././nav_bar/nav_bar_container';
 import ChartsContainer from '../song/charts_container';
-import Footer from '.././footer/footer';
+import Footer from '.././footer/footer_container';
 
 
 const mainPage = ({currentUser, login}) => {

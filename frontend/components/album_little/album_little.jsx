@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-
+import { connect } from 'react-redux';
+import { playSong } from '../../actions/footer_actions';
 
 class AlbumLittle extends React.Component {
 
@@ -9,6 +9,7 @@ class AlbumLittle extends React.Component {
     super(props);
     this.state = { play: false };
     this.play = this.play.bind(this);
+    this.playClicked = this.playClicked.bind(this);
   }
 
   play() {
@@ -21,16 +22,39 @@ class AlbumLittle extends React.Component {
     }
   }
 
+  playClicked() {
+    this.play();
+    this.props.playSong(this.props.songObj);
+  }
+
   render() {
+
     return(
       <div className="AlbumContainer">
         <audio ref={(audio) => { this.audio = audio; } }
           src={this.props.song}>
         </audio>
-        <div onClick={this.play} className={!this.state.play ? "albumplay" : "albumpause"} />
+        <div onClick={() => this.playClicked()} className={!this.state.play ? "albumplay" : "albumpause"} />
       </div>
     );
   }
 }
 
-export default AlbumLittle;
+const msp = (state) => {
+
+  return({
+
+  });
+};
+
+const mdp = (dispatch) => {
+
+  return({
+  playSong: (song) => dispatch(playSong(song))
+  });
+};
+
+export default connect(
+  msp,
+  mdp
+)(AlbumLittle);

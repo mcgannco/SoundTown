@@ -11,6 +11,7 @@ const UploadedSong = ({ song, deleteSong, num }) => (
             <div className="AlbumBigSongCover" style={ {backgroundImage: `url(${song.image_url})`} }>
               <AlbumLittle
                 song={song.audio_url}
+                songObj={song}
                 />
             </div>
         </div>

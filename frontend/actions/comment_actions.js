@@ -31,24 +31,28 @@ export const removeComment = commentId => {
 };
 
 export const createComment = comment => dispatch => {
+
   return(
     APIUtil.createComment(comment).then(comment => dispatch(receiveComment(comment)),
   err => dispatch(receiveErrors(err.responseJSON))));
 };
 
 export const fetchComment = commentId => dispatch => {
+
   return(
     APIUtil.fetchComment(commentId).then(comment => dispatch(receiveComment(comment)),
   err => dispatch(receiveErrors(err.responseJSON))));
 };
 
 export const fetchComments = () => dispatch => {
+
   return(
     APIUtil.fetchComments().then(comments => dispatch(receiveComments(comments)),
   err => dispatch(receiveErrors(err.responseJSON))));
 };
 
 export const deleteComment = (commentId) => dispatch => {
+
   return(
     APIUtil.deleteComment(commentId).then(comment => dispatch(removeComment(commentId)),
   err => dispatch(receiveErrors(err.responseJSON))));

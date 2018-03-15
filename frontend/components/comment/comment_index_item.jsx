@@ -5,7 +5,7 @@ const CommentIndexItem = ({ comment, deleteComment }) => (
   <li className="CommentItems">
     <span>{comment.body}</span>
 
-    <div class="ViewDelete">
+    <div className="ViewDelete">
       <Link to={`/songs/${comment.song_id}`}>View</Link>
       <button onClick={() => deleteComment(comment.id)}>Delete</button>
     </div>

@@ -8,6 +8,7 @@ const SongIndexItem = ({ song, num }) => (
     <div className="AlbumLittleCover" style={ {backgroundImage: `url(${song.image_url})`} }>
       <AlbumLittle
         song={song.audio_url}
+        songObj={song}
         />
     </div>
 

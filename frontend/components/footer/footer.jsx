@@ -9,12 +9,19 @@ class Footer extends React.Component {
     this.state = {
       is_playing: false,
       progress: 0,
-      in_set_progress_mode: false
+      in_set_progress_mode: false,
+      song: {}
     };
 
   }
 
+
+
   render() {
+    let songPicStyle = {};
+    if (this.props.currentSong.image_url) {
+      songPicStyle = {backgroundImage: `url(${this.props.currentSong.image_url})`};
+    }
     return(
       <div className="FooterContainer">
         <div className="PlayBar">
@@ -40,10 +47,13 @@ class Footer extends React.Component {
               </div>
 
               <div className="songPicContainer">
-                <div className="songPic"></div>
+
+                <div className="songPic" style={ songPicStyle }>
+                </div>
+
                 <div className="TitleandAuthor">
-                  <span className="songTitle">Title</span>
-                  <span className="songAuthor">Author</span>
+                  <span className="songTitle">{this.props.currentSong.title}</span>
+                  <span className="songAuthor">{this.props.currentSong.artist_name}</span>
                 </div>
               </div>
           </div>

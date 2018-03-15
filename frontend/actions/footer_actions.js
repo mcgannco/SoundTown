@@ -1,8 +1,9 @@
-export const RECEIVE_SONG = "RECEIVE_SONG";
+export const PLAY_SONG = "PLAY_SONG";
 
-export const openModal = song => {
+export const playSong = song => {
+  
   return({
-    type: RECEIVE_SONG,
+    type: PLAY_SONG,
     song
   });
 };

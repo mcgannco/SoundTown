@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
 import SubNav from '.././sub_nav/sub_nav';
-import Footer from '.././footer/footer';
+import Footer from '.././footer/footer_container';
 import UploadedSong from './uploadedsong';
 import CommentShowContainer from '../comment/comment_show_container';
 
@@ -61,7 +61,7 @@ class Profile extends React.Component {
           <div className="UserProfileContent">
             <div className="UserSongs">
               <div className="Header">
-                <h1>Your Uploads <i class="fas fa-upload"></i>
+                <h1>Your Uploads <i className="fas fa-upload"></i>
 
 </h1>
                 </div>
@@ -72,7 +72,7 @@ class Profile extends React.Component {
 
             <div className="UserComments">
               <div className="Header">
-                <h1>Your Comments <i class="far fa-comment"></i>
+                <h1>Your Comments <i className="far fa-comment"></i>
 
 </h1>
                 </div>

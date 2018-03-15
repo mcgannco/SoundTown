@@ -13,12 +13,14 @@ export const receiveUser = user => ({
 });
 
 export const fetchUsers = () => dispatch => {
+
   return(
     APIUtil.fetchUsers().then(users => dispatch(receiveUsers(users)))
   );
 };
 
 export const fetchUser = (id) => dispatch => {
+
   return(
     APIUtil.fetchUser(id).then(user => dispatch(receiveUser(user)))
   );

@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
 import SubNav from '.././sub_nav/sub_nav';
-import Footer from '.././footer/footer';
+import Footer from '.././footer/footer_container';
 
 class UploadForm extends React.Component {
 
