@@ -43,14 +43,14 @@
 }
 
 .Top50 a {
-  background: #f50;
+  background: white;
   color: white;
-  border: 1px solid #f50;
+  border: 1px solid white;
   border-radius: 3px;
   padding: 13px 23px;
   height: 46px;
   margin-top: 400px;
   font-family: "PT Sans Narrow", sans-serif;
   letter-spacing: 1.5px;
-  
+
 }

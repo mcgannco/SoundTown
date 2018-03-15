@@ -85,7 +85,7 @@ class Profile extends React.Component {
 
 
         </div>
-        <Footer />
+        
     </div>
     );
   }

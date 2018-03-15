@@ -2,22 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { playSong } from '../../actions/footer_actions';
+import { isPlaying } from '../../actions/isplaying_actions';
 
 class AlbumLittle extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { play: false };
     this.play = this.play.bind(this);
     this.playClicked = this.playClicked.bind(this);
   }
 
   play() {
-    if (this.state.play) {
-      this.setState({ play: false });
+
+    if (this.props.playing  && this.props.songObj.id === this.props.currentSong.id) {
+      this.props.isPlaying(false);
       this.audio.pause();
     } else {
-      this.setState({ play: true });
+      this.props.isPlaying(true);
       this.audio.play();
     }
   }
@@ -27,14 +28,16 @@ class AlbumLittle extends React.Component {
     this.props.playSong(this.props.songObj);
   }
 
-  render() {
+  playorpause() {
+    return (this.props.playing  && (this.props.songObj.id === this.props.currentSong.id));
+  }
 
+  render() {
     return(
       <div className="AlbumContainer">
-        <audio ref={(audio) => { this.audio = audio; } }
-          src={this.props.song}>
+        <audio ref={(audio) => { this.audio = audio; } }>
         </audio>
-        <div onClick={() => this.playClicked()} className={!this.state.play ? "albumplay" : "albumpause"} />
+        <div onClick={() => this.playClicked()} className={this.playorpause() ? "albumpause" : "albumplay"} />
       </div>
     );
   }
@@ -43,14 +46,16 @@ class AlbumLittle extends React.Component {
 const msp = (state) => {
 
   return({
-
+    playing: state.ui.isPlaying,
+    currentSong: state.ui.currentSong || {},
   });
 };
 
 const mdp = (dispatch) => {
 
   return({
-  playSong: (song) => dispatch(playSong(song))
+  playSong: (song) => dispatch(playSong(song)),
+  isPlaying: (status) => dispatch(isPlaying(status))
   });
 };
 

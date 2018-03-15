@@ -5,19 +5,20 @@ class Footer extends React.Component {
 
   constructor(props) {
     super(props);
-
-    this.state = {
-      is_playing: false,
-      progress: 0,
-      in_set_progress_mode: false,
-      song: {}
-    };
-
   }
 
-
+  play() {
+    if (this.props.playing) {
+      this.props.isPlaying(false);
+      this.audio.pause();
+    } else {
+      this.props.isPlaying(true);
+      this.audio.play();
+    }
+  }
 
   render() {
+    
     let songPicStyle = {};
     if (this.props.currentSong.image_url) {
       songPicStyle = {backgroundImage: `url(${this.props.currentSong.image_url})`};
@@ -26,7 +27,12 @@ class Footer extends React.Component {
       <div className="FooterContainer">
         <div className="PlayBar">
           <button className="backButton"></button>
-          <button className="playButton"></button>
+
+          <button onClick={() => this.play()} className={!this.props.playing ? "playButton" : "pauseButton"}>
+            <audio ref={(audio) => { this.audio = audio; } }
+              src={this.props.currentSong.audio_url}>
+            </audio>
+          </button>
           <button className="forwardButton"></button>
           <div className="songbar">
             <div className="Duration">0:00

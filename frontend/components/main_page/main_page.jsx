@@ -87,7 +87,7 @@ const loggedInMainPage = () => {
           </div>
         </div>
     </div>
-      <Footer />
+  
     </div>
   );
 };
