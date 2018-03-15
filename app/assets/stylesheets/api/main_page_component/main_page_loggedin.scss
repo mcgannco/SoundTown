@@ -11,7 +11,7 @@
   background-position: center;
   background-repeat: no-repeat;
   border-top: 4px solid #f50;
-  display: block;
+  display: flex;
 }
 
 .IntroGreetingLoggedIn h3 {
@@ -24,12 +24,12 @@
 }
 
 .mainPageContentLoggedIn {
-  width: 75%;
+  width: 100%;
   background: white;
   text-align: center;
   color: black;
   align-items: center;
   justify-content: center;
-  display: block;
+  display: flex;
   height: 900px;
 }

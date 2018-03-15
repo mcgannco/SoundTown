@@ -59,7 +59,31 @@ const loggedInMainPage = () => {
                 <p>Follow your favorite artists, labels and friends on SoundTown and see every track they post right here.</p>
               </div>
             </div>
+            </div>
 
+
+
+        <div className="ContentRight">
+          <div className="ContentOptionsRight">
+            <ul>
+              <li>
+                <i className="fas fa-users"></i> Who to follow
+              </li>
+              <li>
+                <i className="fas fa-sync-alt"></i> Refresh
+              </li>
+            </ul>
+          </div>
+          <div className="ListeningHistory">
+            <ul>
+              <li>
+                <i className="far fa-calendar-alt"></i> Listening history
+              </li>
+              <li>
+                View all
+              </li>
+            </ul>
+          </div>
           </div>
         </div>
     </div>
