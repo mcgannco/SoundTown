@@ -6,6 +6,7 @@ class Footer extends React.Component {
   constructor(props) {
     super(props);
     this.play = this.play.bind(this);
+    this.state = {currentSong: this.props.currentSong};
   }
 
   play() {
@@ -15,6 +16,22 @@ class Footer extends React.Component {
     } else {
       this.props.isPlaying(true);
       this.audio.play();
+    }
+  }
+
+  componentWillReceiveProps(newProps) {
+    
+    if (this.props.currentSong.id !== newProps.currentSong.id) {
+      this.setState({currentSong: newProps.currentSong});
+    }
+  }
+
+  componentDidUpdate() {
+    
+    if(this.props.playing) {
+      this.audio.play();
+    } else {
+      this.audio.pause();
     }
   }
 
@@ -32,7 +49,7 @@ class Footer extends React.Component {
 
           <button onClick={() => this.play()} className={!this.props.playing ? "playButton" : "pauseButton"}>
             <audio ref={(audio) => { this.audio = audio; } }
-              src={this.props.currentSong.audio_url}>
+              src={this.state.currentSong.audio_url}>
             </audio>
           </button>
           <button className="forwardButton"></button>
