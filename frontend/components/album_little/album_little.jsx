@@ -13,7 +13,7 @@ class AlbumLittle extends React.Component {
   }
 
   play() {
-
+    
     if (this.props.playing  && this.props.songObj.id === this.props.currentSong.id) {
       this.props.isPlaying(false);
       this.audio.pause();
@@ -24,8 +24,8 @@ class AlbumLittle extends React.Component {
   }
 
   playClicked() {
-    this.play();
     this.props.playSong(this.props.songObj);
+    this.play();
   }
 
   playorpause() {
@@ -35,7 +35,7 @@ class AlbumLittle extends React.Component {
   render() {
     return(
       <div className="AlbumContainer">
-        <audio ref={(audio) => { this.audio = audio; } }>
+        <audio ref={(audio) => { this.audio = audio; } }src={this.props.currentSong.audio_url}>
         </audio>
         <div onClick={() => this.playClicked()} className={this.playorpause() ? "albumpause" : "albumplay"} />
       </div>

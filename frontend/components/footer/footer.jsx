@@ -5,6 +5,7 @@ class Footer extends React.Component {
 
   constructor(props) {
     super(props);
+    this.play = this.play.bind(this);
   }
 
   play() {
@@ -17,8 +18,9 @@ class Footer extends React.Component {
     }
   }
 
+
   render() {
-    
+
     let songPicStyle = {};
     if (this.props.currentSong.image_url) {
       songPicStyle = {backgroundImage: `url(${this.props.currentSong.image_url})`};
