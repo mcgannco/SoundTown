@@ -15,6 +15,9 @@
     "redux-thunk": "^2.2.0",
     "webpack": "^3.11.0"
   },
+  "devDependencies": {
+   "redux-logger": "^3.0.6"
+  },
   "description": "SoundTown music",
   "version": "1.0.0",
   "main": "index.js",
