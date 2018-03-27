@@ -32,11 +32,11 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'jquery-rails'
 gem 'bcrypt'
-gem 'pry-rails'
 gem 'aws-sdk', '< 3.0'
 gem "paperclip", '~> 5.0.0'
 gem 'figaro'
 gem 'paperclip-av-transcoder'
+gem 'pry-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a  console
