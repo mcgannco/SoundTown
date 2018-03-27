@@ -28,11 +28,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 20px;
   border-radius: 10px;
   height: 100px;
   width: 100px;
-  margin-left: 50px;
 }
 
   .chartstitlesong {
@@ -66,8 +64,8 @@
 
 .CommentItems {
   display: flex;
-  margin-left: 30px;
-  margin-left: 54px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 7px;
   overflow: hidden;
   text-overflow: ellipsis;

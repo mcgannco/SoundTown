@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 75%;
+  width: 80%;
   text-align: center;
   color: black;
   align-items: top;
@@ -17,7 +17,7 @@
   height: 300px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,16 +29,17 @@
 }
 
 .Name {
+  margin-left: 40px;
   background: black;
   color: white;
   padding: 5px 12px;
-  margin-right: 1000px;
-  margin-bottom: 100px;
   font:100 28px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
   border-radius: 5px;
 }
 
 .UserSongs {
+  display: flex;
+    flex-direction: column;
 width: 60%;
 }
 
@@ -56,10 +57,11 @@ align-items: center;
 
 .UploadedSongInfo {
   background: white;
-  width: 100%;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 30px;
 }
 
 .UserComments {
@@ -98,7 +100,7 @@ align-items: center;
 }
 
 .Header h1 {
-  width: 90%;
+  width: 100%;
   border-bottom: 1px solid #f2f2f2;
 }
 
@@ -114,7 +116,7 @@ align-items: center;
   font-size: 12px;
   font-family: 'Poiret One', cursive;
   font-family: 'Quattrocento Sans', sans-serif;
-  margin-left: -49px;
+  margin-left: -88%;
 }
 
 .XOut:hover {
@@ -142,5 +144,5 @@ align-items: center;
   font-size: 12px;
   font-style: bold;
   font-weight: 800;
-  margin-bottom: 100px;
+  margin-right: 40px;
 }
