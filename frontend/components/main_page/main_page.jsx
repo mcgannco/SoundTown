@@ -20,7 +20,7 @@ const loggedOutMainPage = () => {
       </div>
       <div className="mainPageContent">
           <div className="SearchUpload">
-            <input className="SearchBar" defaultValue="Search for artists, bands, tracks, podcasts"></input>
+            <input className="SearchBar" placeholder="Search for artists, bands, tracks, podcasts"></input>
             <i className="fa fa-search" aria-hidden="true"></i>
             <p className="Or">or</p>
             <Link to="/upload"><button className="SearchBarButton">Upload your own</button></Link>
@@ -87,7 +87,7 @@ const loggedInMainPage = () => {
           </div>
         </div>
     </div>
-  
+
     </div>
   );
 };

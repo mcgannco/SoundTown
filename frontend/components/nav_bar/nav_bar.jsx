@@ -42,7 +42,7 @@ const navBar = ({currentUser, logout, openModal}) => {
 
 
         <li>
-          <input className="search-Bar"type="text" defaultValue="Search"></input>
+          <input className="search-Bar"type="text" placeholder="Search"></input>
         </li>
 
         <li><Link to='/upload'><span className="nav-Bar-Button">Upload</span></Link></li>

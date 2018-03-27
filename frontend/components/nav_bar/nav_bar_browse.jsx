@@ -20,7 +20,7 @@ const NavBarBrowse = ({currentUser, logout, openModal}) => {
         </li>
 
         <li>
-          <input className="search-Bar"type="text" defaultValue="Search for artists, bands, tracks, podcasts"></input>
+          <input className="search-Bar"type="text" placeholder="Search for artists, bands, tracks, podcasts"></input>
         </li>
 
         <li>
@@ -55,7 +55,7 @@ const NavBarBrowse = ({currentUser, logout, openModal}) => {
 
 
         <li>
-          <input className="search-Bar"type="text" defaultValue="Search"></input>
+          <input className="search-Bar"type="text" placeholder="Search"></input>
         </li>
         <li>
           <Link to='/upload' className="nav-Bar-Button">Upload</Link>
