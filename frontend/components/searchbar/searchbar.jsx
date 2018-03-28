@@ -1,68 +1,69 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default class SearchBar extends React.Component {
+
+class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       inputVal: ''
     };
-    this.selectName = this.selectName.bind(this);
     this.handleInput = this.handleInput.bind(this);
   }
 
-  handleInput(event) {
-    this.setState({inputVal: event.currentTarget.value});
+  componentDidMount() {
+    this.props.searchSongs(this.state.inputVal);
   }
 
-  matches() {
-    const matches = [];
-    if (this.state.inputVal.length === 0) {
-      return this.props.names;
-    }
+  handleInput(event) {
 
-    this.props.names.forEach(name => {
-      let sub = name.slice(0, this.state.inputVal.length);
+   this.setState({inputVal: event.currentTarget.value});
+ }
+
+ matches() {
+    let matches = [];
+    this.props.songs.forEach(song => {
+      let sub = song.title.slice(0, this.state.inputVal.length);
       if (sub.toLowerCase() === this.state.inputVal.toLowerCase()) {
-        matches.push(name);
+        if (this.state.inputVal.length > 0) {
+          matches.push(song);
+        }
       }
     });
 
-    if (matches.length === 0) {
+
+    if (matches.length === 0 && this.state.inputVal.length > 0) {
       matches.push('No matches');
     }
-
     return matches;
   }
 
-  selectName(event) {
-    let name = event.currentTarget.innerText;
-    this.setState({inputVal: name});
-  }
-
   render() {
-    let results = this.matches().map((result, i) => {
-      return (
-        <li key={i} onClick={this.selectName}>{result}</li>
-      );
+
+    let results = this.matches().map((el, i) => {
+      if (el === 'No matches') {
+        return(
+          <li key={i}>{el}</li>
+        )
+      } else {
+        return(
+          <li key={i}><Link to={`/songs/${el.id}`}>{el.title}</Link></li>
+        )
+      }
     });
+
     return(
       <div>
-        <h1>Autocomplete</h1>
-        <div className='auto'>
-          <input
-            onChange={this.handleInput}
-            value={this.state.inputVal}
-            placeholder='Search...'/>
-          <ul>
-            <ReactCSSTransitionGroup
-              transitionName='auto'
-              transitionEnterTimeout={500}
-              transitionLeaveTimeout={500}>
-              {results}
-            </ReactCSSTransitionGroup>
-          </ul>
-        </div>
+        <input
+          onChange={this.handleInput}
+          className="SearchBar"
+          placeholder="Search for artists, bands, tracks, podcasts">
+        </input>
+        <ul>{results}</ul>
+
       </div>
     );
   }
 }
+
+export default SearchBar;

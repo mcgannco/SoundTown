@@ -28,7 +28,7 @@ const App = () => {
       <Route path='/charts' component={ ChartsContainer } />
       <Route path='/upload' component={ UploadContainer } />
       <Route path='/upload' component={ UploadContainer } />
-      <ProtectedRoute path='/songs/:songId' component={ SongShowContainer } />
+      <Route path='/songs/:songId' component={ SongShowContainer } />
       <ProtectedRoute path="/users/:userId" component={UserShowContainer} />
     </Switch>
     <FooterContainer />

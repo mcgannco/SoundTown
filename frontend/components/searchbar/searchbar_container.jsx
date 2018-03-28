@@ -1,19 +1,18 @@
 import { connect } from 'react-redux';
-import { logout } from '../../actions/session_actions';
-import { openModal } from '../../actions/modal_actions';
+import { searchSongs, clearResults } from '../../actions/search_actions';
 import SearchBar from './searchbar';
 
-const msp = ({session}) => {
+const msp = (state) => {
   return({
-    songs: Object.values(state.entities.songs),
+    songs: Object.values(state.ui.searches) || [],
     currentUser: state.session.currentUser
   })
 }
 
 const mdp = dispatch => {
   return({
-    logout: () => dispatch(logout()),
-    openModal: modal => dispatch(openModal(modal))
+    searchSongs: (query) => dispatch(searchSongs(query)),
+    clearResults: () => dispatch(clearResults())
   })
 }
 

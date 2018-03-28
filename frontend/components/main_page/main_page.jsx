@@ -4,6 +4,7 @@ import TrendingSongs from '../trending_songs/trending_songs'
 import NavBarContainer from '.././nav_bar/nav_bar_container';
 import ChartsContainer from '../song/charts_container';
 import Footer from '.././footer/footer_container';
+import SearchBarContainer from '.././searchbar/searchbar_container';
 
 
 const mainPage = ({currentUser, login}) => {
@@ -20,7 +21,7 @@ const loggedOutMainPage = () => {
       </div>
       <div className="mainPageContent">
           <div className="SearchUpload">
-            <input className="SearchBar" placeholder="Search for artists, bands, tracks, podcasts"></input>
+            <SearchBarContainer />
             <i className="fa fa-search" aria-hidden="true"></i>
             <p className="Or">or</p>
             <Link to="/upload"><button className="SearchBarButton">Upload your own</button></Link>
