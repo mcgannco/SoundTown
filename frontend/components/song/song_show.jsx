@@ -41,7 +41,7 @@ class SongShow extends React.Component {
       <div className="mainPageContainer">
         <NavBarBrowseContainer />
         <div className="UserContainer">
-          <div className="SongBanner" style={ {backgroundImage: `url(${this.props.currentUser.banner_img_url})`} }>
+          <div className="SongBanner">
 
             <div className="SongInfoBig">
               <div className="AlbumBigCover" style={ {backgroundImage: `url(${song.image_url})`} }>
@@ -68,7 +68,7 @@ class SongShow extends React.Component {
             </div>
           </div>
         </div>
-      
+
     </div>
     );
   }
