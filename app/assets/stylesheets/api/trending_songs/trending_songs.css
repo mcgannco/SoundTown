@@ -3,6 +3,10 @@
   justify-content: space-around;
 }
 
+.TrendingContainer {
+  position: relative;
+}
+
 .song {
   width: 170px;
   margin-top: 20px;
@@ -15,6 +19,7 @@
   margin-bottom: 15px;
   margin-top: 20px;
   font-family: 'Nanum Gothic', sans-serif;
+  position: relative;
 }
 
 .SongTitle {

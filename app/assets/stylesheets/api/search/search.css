@@ -1,0 +1,14 @@
+.searchlist {
+  background: black;
+  color: white;
+}
+
+.searchul {
+  position: absolute;
+  width: 631px;
+  z-index: 20000000000000;
+}
+
+.SearchBar li {
+  position: absolute;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchBarContainer from '.././searchbar/searchbar_container';
 
 
 const navBar = ({currentUser, logout, openModal}) => {
@@ -28,6 +29,7 @@ const navBar = ({currentUser, logout, openModal}) => {
   );
 
   const loggedInNav = (currentUser, logout) => (
+
     <div className="nav-Bar-MainLoggedIn">
       <ul className="nav-Bar-ListLoggedIn">
         <li>

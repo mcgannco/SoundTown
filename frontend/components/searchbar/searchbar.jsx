@@ -43,11 +43,11 @@ class SearchBar extends React.Component {
     let results = this.matches().map((el, i) => {
       if (el === 'No matches') {
         return(
-          <li key={i}>{el}</li>
+          <li className="searchlist"key={i}>{el}</li>
         )
       } else {
         return(
-          <li key={i}><Link to={`/songs/${el.id}`}>{el.title}</Link></li>
+          <li className="searchlist" key={i}><Link to={`/songs/${el.id}`}>{el.title}</Link></li>
         )
       }
     });
@@ -59,7 +59,7 @@ class SearchBar extends React.Component {
           className="SearchBar"
           placeholder="Search for artists, bands, tracks, podcasts">
         </input>
-        <ul>{results}</ul>
+        <ul className="searchul">{results}</ul>
 
       </div>
     );
