@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchBarContainer from '.././searchbar/searchbar_container';
-
+import SearchBarNavContainer from '.././searchbar/searchnavcontainer'
 
 const navBar = ({currentUser, logout, openModal}) => {
 
@@ -44,7 +44,7 @@ const navBar = ({currentUser, logout, openModal}) => {
 
 
         <li>
-          <input className="search-Bar"type="text" placeholder="Search"></input>
+          <SearchBarNavContainer />
         </li>
 
         <li><Link to='/upload'><span className="nav-Bar-Button">Upload</span></Link></li>

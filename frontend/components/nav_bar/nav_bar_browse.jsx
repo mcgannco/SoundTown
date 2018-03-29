@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
+import SearchBarNavContainer from '.././searchbar/searchnavcontainer'
 
 const NavBarBrowse = ({currentUser, logout, openModal}) => {
 
@@ -20,7 +21,7 @@ const NavBarBrowse = ({currentUser, logout, openModal}) => {
         </li>
 
         <li>
-          <input className="search-Bar"type="text" placeholder="Search for artists, bands, tracks, podcasts"></input>
+          <SearchBarNavContainer />
         </li>
 
         <li>
@@ -55,7 +56,7 @@ const NavBarBrowse = ({currentUser, logout, openModal}) => {
 
 
         <li>
-          <input className="search-Bar"type="text" placeholder="Search"></input>
+          <SearchBarNavContainer />
         </li>
         <li>
           <Link to='/upload' className="nav-Bar-Button">Upload</Link>
