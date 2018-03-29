@@ -105,8 +105,9 @@ input[type=range]::-webkit-slider-thumb {
     width: 10px;
     border-radius: 50%;
     background: #f50;
+
     margin-top: -4px;
-    margin-right: 40px;
+    margin-right: -40px;
 }
 input[type=range]:focus {
     outline: none;

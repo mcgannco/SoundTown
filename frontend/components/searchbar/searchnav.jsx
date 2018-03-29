@@ -61,7 +61,7 @@ class SearchBarNav extends React.Component {
         <input
           onChange={this.handleInput}
           className="search-Bar"
-          placeholder="Search for artists, bands, tracks, podcasts">
+          placeholder="Search">
         </input>
         <ul className="searchul">{results}</ul>
 

@@ -20,14 +20,14 @@ class Footer extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    
+
     if (this.props.currentSong.id !== newProps.currentSong.id) {
       this.setState({currentSong: newProps.currentSong});
     }
   }
 
   componentDidUpdate() {
-    
+
     if(this.props.playing) {
       this.audio.play();
     } else {
@@ -57,7 +57,7 @@ class Footer extends React.Component {
             <div className="Duration">0:00
             </div>
             <div className="slider">
-              <input type="range" step="any" min="0" max="1" className="progress"></input>
+              <input type="range" step="any" min="0" max="100000" className="progress"></input>
               <div className="slider-track">
               </div>
               <div className="progress"></div>
@@ -68,7 +68,7 @@ class Footer extends React.Component {
             <button className="volume"></button>
 
               <div className="vol">
-                <input type="range" step="any" min="0" max="1" ></input>
+                <input type="range" step="any"></input>
               </div>
 
               <div className="songPicContainer">
