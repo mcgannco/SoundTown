@@ -16,7 +16,6 @@ class SearchBarNav extends React.Component {
   }
 
   handleInput(event) {
-
    this.setState({inputVal: event.currentTarget.value});
  }
 
@@ -39,7 +38,7 @@ class SearchBarNav extends React.Component {
   }
 
   render() {
-
+    
     let results = this.matches().map((el, i) => {
       if (el === 'No matches') {
         return(

@@ -3,7 +3,6 @@ import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
 import SubNav from '.././sub_nav/sub_nav';
-import Footer from '.././footer/footer_container';
 import UploadedSong from './uploadedsong';
 import CommentShowContainer from '../comment/comment_show_container';
 
@@ -85,7 +84,7 @@ class Profile extends React.Component {
 
 
         </div>
-        
+
     </div>
     );
   }

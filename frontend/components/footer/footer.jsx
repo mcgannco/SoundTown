@@ -8,6 +8,9 @@ class Footer extends React.Component {
     this.play = this.play.bind(this);
     this.state = {currentSong: this.props.currentSong};
     this.setVolume = this.setVolume.bind(this);
+    this.currentTime = this.currentTime.bind(this);
+    this.setTime = this.setTime.bind(this);
+    this.showDuration = this.showDuration.bind(this);
   }
 
   play() {
@@ -41,9 +44,44 @@ class Footer extends React.Component {
     }
   }
 
+  setTime(e){
+    if (this.state.currentSong) {
+      this.audio.currentTime = (e.currentTarget.value/100)
+    }
+  }
+
+  showDuration() {
+    if (Object.getOwnPropertyNames(this.state.currentSong).length === 0) {
+      return '';
+    } else if (isNaN(this.audio.duration)){
+        return "";
+      } else {
+      let minutes = Math.floor(this.audio.duration/60)
+      let seconds = Math.floor(this.audio.duration%60)
+      if(seconds < 10){
+        return `${minutes}:0${seconds}`
+      }else{
+        return `${minutes}:${seconds}`
+      }
+    }
+  }
+
+  currentTime() {
+    if (Object.getOwnPropertyNames(this.state.currentSong).length === 0) {
+      return '0:00'
+      } else{
+      let minutes = Math.floor(this.audio.currentTime/60)
+      let seconds = Math.floor(this.audio.currentTime%60)
+      if(seconds < 10){
+        return `${minutes}:0${seconds}`
+      }else{
+        return `${minutes}:${seconds}`
+      }
+    }
+  }
+
 
   render() {
-    
     let songPicStyle = {};
     if (this.props.currentSong.image_url) {
       songPicStyle = {backgroundImage: `url(${this.props.currentSong.image_url})`};
@@ -56,13 +94,21 @@ class Footer extends React.Component {
 
           <button onClick={() => this.play()} className={!this.props.playing ? "playButton" : "pauseButton"}>
             <audio ref={(audio) => { this.audio = audio; } }
-              src={this.state.currentSong.audio_url}>
+              src={this.state.currentSong.audio_url}
+              onTimeUpdate={() => {this.setState({ currentTime: this.audio.currentTime })}}
+              >
+
             </audio>
           </button>
           <button className="forwardButton"></button>
           <div className="songbar">
-            <div className="Duration">
-              0:00
+            <div>
+              <input
+                className="Duration"
+                type="text" readOnly
+                value={this.currentTime()}
+                onChange={this.setTime}
+                />
             </div>
             <div className="slider">
               <input type="range" step="any" min="0" max="100000" className="progress"></input>
@@ -70,7 +116,12 @@ class Footer extends React.Component {
               </div>
               <div className="progress"></div>
             </div>
-            <div className="EndDuration">3:17
+            <div>
+              <input
+                className="EndDuration"
+                type="text" readOnly
+                value={this.showDuration()}
+                />
             </div>
 
             <button className="volume"></button>

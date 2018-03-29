@@ -3,7 +3,6 @@ import { Route } from 'react-router-dom';
 import Charts_Container from './charts_container';
 import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
 import SongIndexItem from './song_index_item';
-import Footer from '.././footer/footer_container';
 import AlbumLittle from '.././album_little/album_little';
 
 

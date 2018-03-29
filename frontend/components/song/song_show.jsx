@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBarBrowseContainer from '.././nav_bar/nav_bar_browse_container';
-import Footer from '.././footer/footer_container';
 import CommentForm from '.././comment/comment_form_container';
 import SongComments from '.././comment/song_comments';
 import AlbumLittle from '.././album_little/album_little';
