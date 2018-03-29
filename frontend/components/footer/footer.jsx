@@ -111,7 +111,7 @@ class Footer extends React.Component {
                 />
             </div>
             <div className="slider">
-              <input type="range" step="any" min="0" max="100000" className="progress"></input>
+              <input type="range" min="0" step="any" onChange={this.setTime}  className="progress"></input>
               <div className="slider-track">
               </div>
               <div className="progress"></div>
