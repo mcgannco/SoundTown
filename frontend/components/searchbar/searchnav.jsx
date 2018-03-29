@@ -38,7 +38,7 @@ class SearchBarNav extends React.Component {
   }
 
   render() {
-    
+
     let results = this.matches().map((el, i) => {
       if (el === 'No matches') {
         return(
@@ -47,7 +47,6 @@ class SearchBarNav extends React.Component {
       } else {
         return(
           <li className="searchlistnav" key={i}>
-            <i className="fa fa-search" aria-hidden="true"></i>
             <Link to={`/songs/${el.id}`}>{el.title}
             </Link>
             </li>
