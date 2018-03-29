@@ -41,7 +41,7 @@ class SongShow extends React.Component {
       <div className="mainPageContainer">
         <NavBarBrowseContainer />
         <div className="UserContainer">
-          <div className="SongBanner">
+          <div className="SongBanner" style={ {backgroundImage: `url(${defaultbanner})`} }>
 
             <div className="SongInfoBig">
               <div className="AlbumBigCover" style={ {backgroundImage: `url(${song.image_url})`} }>
