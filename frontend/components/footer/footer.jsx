@@ -7,6 +7,7 @@ class Footer extends React.Component {
     super(props);
     this.play = this.play.bind(this);
     this.state = {currentSong: this.props.currentSong};
+    this.setVolume = this.setVolume.bind(this);
   }
 
   play() {
@@ -17,17 +18,16 @@ class Footer extends React.Component {
       this.props.isPlaying(true);
       this.audio.play();
     }
+
   }
 
   componentWillReceiveProps(newProps) {
-
     if (this.props.currentSong.id !== newProps.currentSong.id) {
       this.setState({currentSong: newProps.currentSong});
     }
   }
 
   componentDidUpdate() {
-
     if(this.props.playing) {
       this.audio.play();
     } else {
@@ -35,13 +35,20 @@ class Footer extends React.Component {
     }
   }
 
+  setVolume(e) {
+    if (this.state.currentSong) {
+      this.audio.volume = (e.currentTarget.value/100)
+    }
+  }
+
 
   render() {
-
+    
     let songPicStyle = {};
     if (this.props.currentSong.image_url) {
       songPicStyle = {backgroundImage: `url(${this.props.currentSong.image_url})`};
     }
+
     return(
       <div className="FooterContainer">
         <div className="PlayBar">
@@ -54,7 +61,8 @@ class Footer extends React.Component {
           </button>
           <button className="forwardButton"></button>
           <div className="songbar">
-            <div className="Duration">0:00
+            <div className="Duration">
+              0:00
             </div>
             <div className="slider">
               <input type="range" step="any" min="0" max="100000" className="progress"></input>
@@ -68,7 +76,7 @@ class Footer extends React.Component {
             <button className="volume"></button>
 
               <div className="vol">
-                <input type="range" step="any"></input>
+                <input onChange={this.setVolume}type="range" step="any"></input>
               </div>
 
               <div className="songPicContainer">
