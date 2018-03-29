@@ -1,6 +1,19 @@
 .searchlist {
   background: black;
-  color: white;
+  color: #ccc;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+.searchlist:hover {
+  background: grey;
+}
+
+.searchlist a {
+  padding-left: 10px;
 }
 
 .searchul {

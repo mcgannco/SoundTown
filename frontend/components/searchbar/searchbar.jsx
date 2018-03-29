@@ -47,7 +47,11 @@ class SearchBar extends React.Component {
         )
       } else {
         return(
-          <li className="searchlist" key={i}><Link to={`/songs/${el.id}`}>{el.title}</Link></li>
+          <li className="searchlist" key={i}>
+            <i className="fa fa-search" aria-hidden="true"></i>
+            <Link to={`/songs/${el.id}`}>{el.title}
+            </Link>
+            </li>
         )
       }
     });
