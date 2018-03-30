@@ -11,6 +11,7 @@ class Footer extends React.Component {
     this.currentTime = this.currentTime.bind(this);
     this.setTime = this.setTime.bind(this);
     this.showDuration = this.showDuration.bind(this);
+    this.songlength = this.songlength.bind(this);
   }
 
   play() {
@@ -40,13 +41,24 @@ class Footer extends React.Component {
 
   setVolume(e) {
     if (this.state.currentSong) {
-      this.audio.volume = (e.currentTarget.value/100)
+      this.audio.volume = (e.currentTarget.value)
+    }
+  }
+
+  songlength() {
+
+    if (Object.getOwnPropertyNames(this.state.currentSong).length === 0) {
+      return 0;
+    } else if (isNaN(this.audio.duration)){
+          return 0;
+    } else {
+      return this.audio.duration;
     }
   }
 
   setTime(e){
     if (this.state.currentSong) {
-      this.audio.currentTime = (e.currentTarget.value/100)
+      this.audio.currentTime = (e.currentTarget.value)
     }
   }
 
@@ -111,7 +123,7 @@ class Footer extends React.Component {
                 />
             </div>
             <div className="slider">
-              <input type="range" min="0" step="any" onChange={this.setTime}  className="progress"></input>
+              <input type="range" min = "0" max={this.songlength()} step="0.001" value={this.state.currentTime} onChange={this.setTime} className="progress"></input>
               <div className="slider-track">
               </div>
               <div className="progress"></div>
