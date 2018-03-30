@@ -14,6 +14,12 @@ class Comment extends React.Component {
     this.updateBody = this.updateBody.bind(this);
   }
 
+  componentWillReceiveProps(newProps){
+    if(newProps.match.params.songId !== this.props.match.params.songId){
+      this.setState({song_id: newProps.match.params.songId});
+    }
+  }
+
   componentDidMount() {
     this.props.fetchComments();
     this.props.fetchUsers();
@@ -26,6 +32,7 @@ class Comment extends React.Component {
   }
 
   handleSubmit(e) {
+
     e.preventDefault();
     this.props.createComment(this.state).then(() => this.props.history.push(`/songs/${this.state.song_id}`));
     this.setState({body: ""});
