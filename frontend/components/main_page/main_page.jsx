@@ -4,6 +4,7 @@ import TrendingSongs from '../trending_songs/trending_songs'
 import NavBarContainer from '.././nav_bar/nav_bar_container';
 import ChartsContainer from '../song/charts_container';
 import SearchBarContainer from '.././searchbar/searchbar_container';
+import WaveForm from '.././waveform/waveform';
 
 
 const mainPage = ({currentUser, login}) => {
@@ -39,16 +40,16 @@ const loggedInMainPage = () => {
         <NavBarContainer />
         <div className="mainPageContentLoggedIn">
           <div className="MainPageContentLeft">
-            <div className="ContentOptions">
+            <div className="ContentOptionsLinks">
               <ul>
                 <li>
-                  Stream
+                  <Link to='/charts'>Charts</Link>
                 </li>
                 <li>
-                  Charts
+                  <Link to='/upload'>Upload</Link>
                 </li>
                 <li>
-                  Discover
+                  <Link to={`/users/${currentUser.id}`}>Profile</Link>
                 </li>
               </ul>
             </div>
@@ -58,7 +59,9 @@ const loggedInMainPage = () => {
                 <br />
                 <p>Follow your favorite artists, labels and friends on SoundTown and see every track they post right here.</p>
               </div>
+
             </div>
+            <WaveForm />
             </div>
 
 

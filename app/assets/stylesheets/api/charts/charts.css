@@ -79,10 +79,34 @@ border-right: 0.5px solid #f2f2f2;
   justify-content: center;
 }
 
+.ContentOptionsLinks {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
 .ContentOptions ul{
   display: flex;
   width: 90%;
   border-bottom: 1px solid #f2f2f2;
+}
+
+.ContentOptionsLinks ul{
+  display: flex;
+  width: 90%;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.ContentOptionsLinks li{
+  padding-right: 30px;
+  font-size: 24px;
+  line-height: 1.6;
+  font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+  color: #f50;
+}
+
+.ContentOptionsLinks li:hover {
+  color:black;
 }
 
 .ContentOptions li{
@@ -90,12 +114,7 @@ border-right: 0.5px solid #f2f2f2;
   font-size: 24px;
   line-height: 1.6;
   font-family: "Interstate","Lucida Grande",Arial,sans-serif;
-  cursor: pointer;
   color: #f50;
-}
-
-.ContentOptions li:hover{
-  color: black;
 }
 
 .ContentHeaderList li {

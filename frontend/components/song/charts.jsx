@@ -25,13 +25,7 @@ class Charts extends React.Component {
             <div className="ContentOptions">
               <ul>
                 <li>
-                  Stream
-                </li>
-                <li>
-                  Charts
-                </li>
-                <li>
-                  Discover
+                  SoundTowns Charts
                 </li>
               </ul>
             </div>

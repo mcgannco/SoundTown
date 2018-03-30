@@ -41,7 +41,7 @@ class Footer extends React.Component {
 
   setVolume(e) {
     if (this.state.currentSong) {
-      this.audio.volume = (e.currentTarget.value)
+      this.audio.volume = (e.currentTarget.value / 100)
     }
   }
 

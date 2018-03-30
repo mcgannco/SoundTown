@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom';
 
 const SubNav = () => {
   return(
-
-
-
       <ul className="SubNavBar-List">
 
         <li>
@@ -22,11 +19,7 @@ const SubNav = () => {
         </li>
 
         <li>
-        <a href="#" className="UploadButtons">Pro Plans</a>
-        </li>
-
-        <li>
-        <a href="#" className="UploadButtons">Pulse</a>
+          <Link to="/charts" className="UploadButtons">Charts</Link>
         </li>
 
       </ul>
