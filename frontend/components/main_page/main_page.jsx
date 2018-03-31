@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import TrendingSongs from '../trending_songs/trending_songs'
+import TrendingSongsContainer from '../trending_songs/trending_songs_container'
 import NavBarContainer from '.././nav_bar/nav_bar_container';
 import ChartsContainer from '../song/charts_container';
 import SearchBarContainer from '.././searchbar/searchbar_container';
-import WaveForm from '.././waveform/waveform';
 
 
 const mainPage = ({currentUser, login}) => {
@@ -26,7 +25,7 @@ const loggedOutMainPage = () => {
             <p className="Or">or</p>
             <Link to="/upload"><button className="SearchBarButton">Upload your own</button></Link>
           </div>
-          <TrendingSongs />
+          <TrendingSongsContainer />
 
       </div>
     </div>
@@ -59,9 +58,7 @@ const loggedInMainPage = () => {
                 <br />
                 <p>Follow your favorite artists, labels and friends on SoundTown and see every track they post right here.</p>
               </div>
-
             </div>
-            <WaveForm />
             </div>
 
 

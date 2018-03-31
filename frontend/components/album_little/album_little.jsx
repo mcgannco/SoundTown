@@ -19,7 +19,7 @@ class AlbumLittle extends React.Component {
 
     } else {
       this.props.isPlaying(true);
-      
+
     }
   }
 

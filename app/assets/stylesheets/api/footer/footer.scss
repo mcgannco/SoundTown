@@ -17,8 +17,8 @@
 
 .playButton {
   width: 20px;
-  height: 25px;
-  background-image: image-url('play.png');
+  height: 20px;
+  background-image: image-url('playtest.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,9 +26,9 @@
 }
 
 .pauseButton {
-  width: 14px;
-  height: 14px;
-  background-image: image-url('pause.png');
+  width: 20px;
+  height: 20px;
+  background-image: image-url('pausetest.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -102,7 +102,7 @@ width: 37px;
 input[type=range] {
     -webkit-appearance: none;
     width: 645px;
-    
+
 }
 input[type=range]::-webkit-slider-runnable-track {
     width: 600px;
