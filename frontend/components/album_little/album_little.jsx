@@ -13,7 +13,6 @@ class AlbumLittle extends React.Component {
   }
 
   play() {
-
     if (this.props.playing  && this.props.songObj.id === this.props.currentSong.id) {
       this.props.isPlaying(false);
 

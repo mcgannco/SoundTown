@@ -54,7 +54,6 @@ class Profile extends React.Component {
         <div className="UserContainer">
           <div className="UserBanner" style={ {backgroundImage: `url(${this.props.currentUser.banner_img_url})`} }>
             <p className="Name">{this.props.currentUser.username}</p>
-            <button onClick={this.handleSubmit} className ="UploadBanner">Update Image</button>
           </div>
 
           <div className="UserProfileContent">

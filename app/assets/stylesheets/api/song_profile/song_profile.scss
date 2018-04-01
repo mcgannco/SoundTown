@@ -31,10 +31,8 @@
 }
 
 .Creds h3 {
-  background: black;
   color: white;
-  width: 500px;;
-  color: white;
+  width: 500px;
   font-weight: 100;
   font-family: "Interstate","Lucida Grande",Arial,sans-serif;
   font-size: 24px;
@@ -42,16 +40,18 @@
   margin-top: 0px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  text-align: left;
+  margin-bottom: 52px;
 }
 
 .Creds p {
-  background: black;
   color: #ccc;
-  font-weight: 100;
-  font-family: "Interstate","Lucida Grande",Arial,sans-serif;
-  font-size: 16px;
-  padding: 7px;
-  width: 500px;
+    font-weight: 100;
+    font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+    font-size: 16px;
+    padding: 7px;
+    width: 500px;
+    text-align: left;
 }
 
 .AddComment {
@@ -150,12 +150,10 @@
   background-repeat: no-repeat;
   margin-bottom: 20px;
   margin-top: 32px;
-  border-radius: 10px;
+  border-radius: 155px;
 }
 
 .SongInfoBig {
-  width: 448px;
-  width: 102%;
   height: 33%;
   margin-left: 86px;
   margin-bottom: 200px;

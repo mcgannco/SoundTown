@@ -19,7 +19,8 @@
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
-    "webpack": "^3.11.0"
+    "webpack": "^3.11.0",
+    "wavesurfer.js": "^2.0.4"
   },
   "devDependencies": {
    "redux-logger": "^3.0.6"

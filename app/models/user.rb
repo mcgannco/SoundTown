@@ -20,7 +20,7 @@ class User < ApplicationRecord
   validates :username, uniqueness: true
   validates :password, length: { minimum: 6, allow_nil: true }
 
-  has_attached_file :image, default_url: "defaultbanner.png"
+  has_attached_file :image, default_url: "user.jpg"
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
   attr_reader :password
