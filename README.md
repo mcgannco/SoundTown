@@ -2,7 +2,7 @@
 
 SoundTown is a web application for sharing and listening to music. It was inspired by SoundCloud and built using Ruby on Rails, React, Redux and Javascript. This project is under active development and new features will continue to be added.
 
-Explore and Listen at http://soundtown.herokuapp.com/#/.
+Explore and Listen [here](http://soundtown.herokuapp.com/#/).
 
 ## Features
 
@@ -22,7 +22,7 @@ Comment on tracks
   * Users can comment on any track, and delete and of their own comments on any given track
 
 # Continuous Audio Playback:
-
+![Optional Text](./assets/images/shot.jpg)
 SoundTown has a custom built audio player which built off of HTML 5s audio tag. The audio player is built in sync with other custom built audio players throughout the site, by transfering the audio's play / pause state through the redux state.
 
 # Comments:
