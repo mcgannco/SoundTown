@@ -43,7 +43,7 @@ class Charts extends React.Component {
               </div>
             </div>
             <ul >
-              {songs.map((song,idx) => <SongIndexItem key={song.id} image ={song.image_url} song={song} num={idx + 1}/>)}
+              {songs.reverse().map((song,idx) => <SongIndexItem key={song.id} image ={song.image_url} song={song} num={idx + 1}/>)}
             </ul>
           </div>
 
