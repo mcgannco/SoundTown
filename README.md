@@ -42,3 +42,7 @@ User have the ability to comment on any songs uploaded to SoundTown, as well as 
 User have the ability to comment on any songs uploaded to SoundTown, as well as delete any comment that they write.  Comments are associated with the song they belong to and are rendered on each song show page in descending order
 
 # Future Features:
+* Waveforms
+* Likes and Follows
+* Playlists
+* Additional views to help with discovering music
