@@ -33,8 +33,12 @@ The app features two different audio playing React components, the audio footer 
 }
 ```
 
-
-
 # Comments:
+![Optional Text](./app/assets/images/commentex.jpg)
+User have the ability to comment on any songs uploaded to SoundTown, as well as delete any comment that they write.  Comments are associated with the song they belong to and are rendered on each song show page in descending order
+
+# Search:
+![Optional Text](./app/assets/images/searchex.jpg)
+User have the ability to comment on any songs uploaded to SoundTown, as well as delete any comment that they write.  Comments are associated with the song they belong to and are rendered on each song show page in descending order
 
 # Future Features:
