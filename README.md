@@ -27,7 +27,7 @@ The app features two different audio playing React components, the audio footer 
 
 ```javascript
 { currentSong:
- { song: {id: 12, user_id: 4, title: "Where Do My Bluebirds Fly", etc...}
+ { song: {id: 23, user_id: 5, title: "SongTitle", etc...}
    isPlaying: False
  }
 }
