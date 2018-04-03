@@ -7,15 +7,16 @@ Explore and Listen at http://soundtown.herokuapp.com/#/.
 ## Features
 
 * Account creation with back and front-end authentication using BCrypt
-** hello
+..* hello
+
 Playbar fixed to the bottom of the page
 Continuous track play
 Upload your own tracks
 
-#Continuous Audio Playback:
+# Continuous Audio Playback:
 
 SoundTown has a custom built audio player which built off of HTML 5s audio tag. The audio player is built in sync with other custom built audio players throughout the site, by transfering the audio's play / pause state through the redux state.
 
-#Comments:
+# Comments:
 
-#Future Features:
+# Future Features:
