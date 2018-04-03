@@ -6,12 +6,20 @@ Explore and Listen at http://soundtown.herokuapp.com/#/.
 
 ## Features
 
-* Account creation with back and front-end authentication using BCrypt
-  * Bullet 2a
+Account creation with back and front-end authentication using BCrypt
+  * Users can create acounts as well as log in /out
+  * Uploads / comments are displayed on user profile pages, both can be directly viewed or deleted by the respective user
 
-Playbar fixed to the bottom of the page
-Continuous track play
-Upload your own tracks
+Upload songs and album images
+  * Upload songs with title, artist name and an album cover image
+
+Continuous audio playback that follows you throughout the site
+  * Ability to play/pause songs from anywhere on the site
+  * Song continually plays when you move to a different page
+  * Ability to adjust volume / current time position in the song
+
+Comment on tracks
+  * Users can comment on any track, and delete and of their own comments on any given track
 
 # Continuous Audio Playback:
 
