@@ -23,7 +23,17 @@ Comment on tracks
 
 # Continuous Audio Playback:
 ![Optional Text](./app/assets/images/shot.jpg)
-SoundTown has a custom built audio player which built off of HTML 5s audio tag. The audio player is built in sync with other custom built audio players throughout the site, by transfering the audio's play / pause state through the redux state.
+The app features two different audio playing React components, the audio footer playbar and the album cover player.  The audio footer player is present on every page, which allows for continuous audio playback, and is which built off of HTML 5s audio tag. The audio player is built in sync with other custom built audio players throughout the site by transferring the audio's play / pause state through the redux state.  The audio element associated with the audio footer is updated through the global slice of state for play, pause, a change in the point of the song, and volume.
+
+```javascript
+{ currentSong:
+ { song: {id: 12, user_id: 4, title: "Where Do My Bluebirds Fly", etc...}
+   isPlaying: False
+ }
+}
+```
+
+
 
 # Comments:
 
