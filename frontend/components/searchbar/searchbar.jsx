@@ -16,7 +16,6 @@ class SearchBar extends React.Component {
   }
 
   handleInput(event) {
-
    this.setState({inputVal: event.currentTarget.value});
  }
 
