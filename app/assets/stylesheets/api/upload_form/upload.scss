@@ -69,8 +69,8 @@ text-align: center;
   cursor: pointer;
   align-items: center;
   text-align: center;
-  margin-right: 20px;
   width: 121px;
+  margin-bottom: 10px;
 }
 
 .File {
@@ -144,8 +144,40 @@ text-align: center;
   font-size: 24px;
   line-height: 1;
   font-family: "PT Sans Narrow", sans-serif;
+  border-bottom: 4px solid #f50;
+  padding-bottom: 10px;
 }
 .UploadFiles{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.imageprev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border: 2px solid grey;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.uploadbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploadErrors {
+  display: flex;
+  justify-content: flex-end;
+  color: red;
+  text-align: center;
+  font:100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  height: 20px;
+  margin-right: 20px;
 }

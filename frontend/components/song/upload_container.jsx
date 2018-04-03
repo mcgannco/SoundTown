@@ -6,7 +6,8 @@ const msp = (state) => {
 
   return({
     songs: Object.values(state.entities.songs),
-    currentUser: state.session.currentUser
+    currentUser: state.session.currentUser,
+    errors: state.errors.song,
   });
 };
 
