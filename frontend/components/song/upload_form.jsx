@@ -97,7 +97,6 @@ class UploadForm extends React.Component {
   }
 
   render() {
-
     return (
       <div className="mainPageContainer">
         <div className="uploadContentMain">
