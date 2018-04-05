@@ -8,12 +8,12 @@ import { fetchSong, fetchSongs } from './actions/song_actions';
 import { fetchUsers } from './actions/user_actions';
 
 //testing start
-window.signup = signup;
-window.login = login;
-window.logout = logout;
-window.fetchSong = fetchSong;
-window.fetchSongs = fetchSongs;
-window.fetchUsers = fetchUsers;
+// window.signup = signup;
+// window.login = login;
+// window.logout = logout;
+// window.fetchSong = fetchSong;
+// window.fetchSongs = fetchSongs;
+// window.fetchUsers = fetchUsers;
 //testing end
 
 
@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
     store = configureStore(preloadedState);
     delete window.currentUser;
     window.getState = store.getState;
-    window.dispatch = store.dispatch;
+    // window.dispatch = store.dispatch;
   } else {
     store = configureStore();
     window.getState = store.getState;
-    window.dispatch = store.dispatch;
+    // window.dispatch = store.dispatch;
   }
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store} />, root);
