@@ -8,12 +8,12 @@ import { fetchSong, fetchSongs } from './actions/song_actions';
 import { fetchUsers } from './actions/user_actions';
 
 //testing start
-// window.signup = signup;
-// window.login = login;
-// window.logout = logout;
-// window.fetchSong = fetchSong;
-// window.fetchSongs = fetchSongs;
-// window.fetchUsers = fetchUsers;
+window.signup = signup;
+window.login = login;
+window.logout = logout;
+window.fetchSong = fetchSong;
+window.fetchSongs = fetchSongs;
+window.fetchUsers = fetchUsers;
 //testing end
 
 
